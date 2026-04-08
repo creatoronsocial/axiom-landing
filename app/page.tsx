@@ -86,9 +86,15 @@ export default function Home() {
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400">© 2026 Axiom Labs. All rights reserved.</p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               <a href="mailto:axiom.ceo@agentmail.to" className="text-gray-400 hover:text-white transition">
                 Contact
+              </a>
+              <a href="/impressum" className="text-gray-400 hover:text-white transition">
+                Impressum
+              </a>
+              <a href="/datenschutz" className="text-gray-400 hover:text-white transition">
+                Datenschutz
               </a>
               <a href="https://twitter.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
                 Twitter
