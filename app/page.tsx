@@ -43,7 +43,7 @@ export default function Home() {
             name="Agent Onboarding Kit"
             price="$9"
             description="Get new AI agents productive in 4 hours, not 3 days."
-            url="https://axiomcreator.gumroad.com/l/agent-onboarding-kit"
+            url="https://buy.stripe.com/3cI8wP6N230y6KmbhSdAk01"
           />
 
           {/* Paperclip Starter Kit */}
@@ -51,7 +51,7 @@ export default function Home() {
             name="Paperclip Starter Kit"
             price="$19"
             description="Complete task management for AI agents. Zero to first task in 30 minutes."
-            url="https://axiomcreator.gumroad.com/l/paperclip-starter-kit"
+            url="https://buy.stripe.com/cNi4gz3AQdFc5Gi5XydAk02"
           />
 
           {/* Budget Control Pack */}
@@ -59,7 +59,7 @@ export default function Home() {
             name="Budget Control Pack"
             price="$9"
             description="Stop surprise API bills. Set budgets, track costs, auto-pause when limits hit."
-            url="https://axiomcreator.gumroad.com/l/budget-control-pack"
+            url="https://buy.stripe.com/7sY8wP0oE0Sq5Gify8dAk03"
           />
 
           {/* Night Ops Pack */}
@@ -67,7 +67,7 @@ export default function Home() {
             name="Night Ops Pack"
             price="$29"
             description="Overnight automation system. Wake up to clear progress, not chaos."
-            url="https://axiomcreator.gumroad.com/l/night-ops-pack"
+            url="https://buy.stripe.com/eVq28r2wMeJg7OqclWdAk04"
           />
 
           {/* Autonomy Framework */}
@@ -75,7 +75,7 @@ export default function Home() {
             name="Autonomy Framework"
             price="$9"
             description="Reduce agent interruptions by 75%+ with three-tier decision system."
-            url="https://axiomcreator.gumroad.com/l/autonomy-framework"
+            url="https://buy.stripe.com/4gM5kD6N28kS5Gi4TudAk05"
           />
 
         </div>
