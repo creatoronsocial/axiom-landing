@@ -8,11 +8,11 @@ export default function Home() {
             Axiom Labs
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
-            Autonomous AI Products for Operators
+            OpenClaw Products for AI Operators
           </p>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12">
-            Build, deploy, and scale AI agents with battle-tested tools.
-            From onboarding to overnight automation — we've got you covered.
+            Battle-tested skill packs for OpenClaw agents.
+            From Paperclip task management to overnight automation — install in minutes, not days.
           </p>
           <div className="flex gap-4 justify-center">
             <a
@@ -42,42 +42,66 @@ export default function Home() {
           <ProductCard
             name="Agent Onboarding Kit"
             price="$9"
-            description="Get new AI agents productive in 4 hours, not 3 days."
-            url="https://buy.stripe.com/14A8wP2wMat0fgS1HidAk06"
+            description="New OpenClaw agents productive in 4 hours. Memory setup, Paperclip integration, task queues — pre-configured for your workspace."
+            url="https://www.shopclawmart.com/listings/agent-onboarding-kit-new-agents-in-4-hours-24b1b32c"
           />
 
           {/* Paperclip Starter Kit */}
           <ProductCard
             name="Paperclip Starter Kit"
             price="$19"
-            description="Complete task management for AI agents. Zero to first task in 30 minutes."
-            url="https://buy.stripe.com/bJe4gzc7mdFc1q285GdAk07"
+            description="Complete task management for OpenClaw agents. Zero to first task in 30 minutes. Includes queue discipline and progress tracking."
+            url="https://www.shopclawmart.com/listings/paperclip-starter-kit-task-management-for-ai-agents-2d0e602e"
           />
 
           {/* Budget Control Pack */}
           <ProductCard
             name="Budget Control Pack"
             price="$9"
-            description="Stop surprise API bills. Set budgets, track costs, auto-pause when limits hit."
-            url="https://buy.stripe.com/cNidR9gnC30y2u61HidAk08"
+            description="Stop surprise OpenClaw API bills. Set budgets, track costs per agent, auto-pause when limits hit. Works with Ollama, Claude, and more."
+            url="https://www.shopclawmart.com/listings/budget-control-pack-stop-surprise-api-bills-83773330"
           />
 
           {/* Night Ops Pack */}
           <ProductCard
             name="Night Ops Pack"
             price="$29"
-            description="Overnight automation system. Wake up to clear progress, not chaos."
-            url="https://buy.stripe.com/6oU8wPefu9oWc4G99KdAk09"
+            description="Overnight automation for OpenClaw. Queue discipline, morning briefings, wake-up-to-progress workflows. Your agent works while you sleep."
+            url="https://www.shopclawmart.com/listings/night-ops-pack-overnight-queue-discipline-for-openclaw-2919e491"
           />
 
           {/* Autonomy Framework */}
           <ProductCard
             name="Autonomy Framework"
             price="$9"
-            description="Reduce agent interruptions by 75%+ with three-tier decision system."
-            url="https://buy.stripe.com/dRmfZh0oE8kS1q22LmdAk0a"
+            description="Reduce OpenClaw interruptions by 75%+. Three-tier decision system: act, report, ask. Configurable trust boundaries for your agent."
+            url="https://www.shopclawmart.com/listings/autonomy-framework-when-to-act-when-to-report-when-to-ask-596b6044"
           />
 
+        </div>
+      </section>
+
+      {/* Trust Section */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-8">Why Axiom Labs?</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="text-4xl mb-4">🦞</div>
+              <h3 className="font-semibold mb-2">Clawmart Native</h3>
+              <p className="text-gray-400 text-sm">All products optimized for OpenClaw. One-click install via Clawmart API.</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="font-semibold mb-2">Battle Tested</h3>
+              <p className="text-gray-400 text-sm">Every pack runs in production. Real workflows, not theoretical prompts.</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">🔧</div>
+              <h3 className="font-semibold mb-2">Operator Built</h3>
+              <p className="text-gray-400 text-sm">Created by OpenClaw operators for OpenClaw operators.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -87,7 +111,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400">© 2026 Axiom Labs. All rights reserved.</p>
             <div className="flex flex-wrap justify-center gap-6">
-              <a href="mailto:axiom.ceo@agentmail.to" className="text-gray-400 hover:text-white transition">
+              <a href="mailto:ceo@axiomlabs.systems" className="text-gray-400 hover:text-white transition">
                 Contact
               </a>
               <a href="/impressum" className="text-gray-400 hover:text-white transition">
