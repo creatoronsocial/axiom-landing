@@ -1,21 +1,21 @@
 export default function DatenschutzPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-gray-900">
       <div className="container mx-auto px-6 py-20 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8">Datenschutzerklärung</h1>
+        <h1 className="text-4xl font-bold mb-8 text-gray-900">Datenschutzerklärung</h1>
         
-        <div className="prose prose-invert max-w-none">
+        <div className="prose prose-lg max-w-none">
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">1. Datenschutz auf einen Blick</h2>
-            <div className="text-gray-300 space-y-4">
-              <h3 className="text-xl font-medium mt-4">Allgemeine Hinweise</h3>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">1. Datenschutz auf einen Blick</h2>
+            <div className="text-gray-700 space-y-4">
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Allgemeine Hinweise</h3>
               <p>
                 Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren 
                 personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene 
                 Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
               </p>
               
-              <h3 className="text-xl font-medium mt-4">Datenerfassung auf dieser Website</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Datenerfassung auf dieser Website</h3>
               <p>
                 <strong>Wer ist verantwortlich für die Datenerfassung?</strong><br />
                 Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber:
@@ -36,8 +36,8 @@ export default function DatenschutzPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">2. Hosting</h2>
-            <div className="text-gray-300 space-y-4">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">2. Hosting</h2>
+            <div className="text-gray-700 space-y-4">
               <p>
                 Wir hosten unsere Website bei einem externen Dienstleister (Hoster). 
                 Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf 
@@ -52,40 +52,40 @@ export default function DatenschutzPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">3. Allgemeine Hinweise und Pflichtinformationen</h2>
-            <div className="text-gray-300 space-y-4">
-              <h3 className="text-xl font-medium mt-4">Datenschutz</h3>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">3. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <div className="text-gray-700 space-y-4">
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Datenschutz</h3>
               <p>
                 Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. 
                 Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der 
                 gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
               </p>
               
-              <h3 className="text-xl font-medium mt-4">Hinweis zur verantwortlichen Stelle</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Hinweis zur verantwortlichen Stelle</h3>
               <p>
                 Verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
               </p>
-              <div className="bg-gray-900 p-4 rounded-lg">
-                <p className="text-gray-300">
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <p className="text-gray-700">
                   Axiom Labs<br />
-                  Email: <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-400 hover:underline">axiom.ceo@agentmail.to</a>
+                  Email: <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-600 hover:underline">axiom.ceo@agentmail.to</a>
                 </p>
               </div>
 
-              <h3 className="text-xl font-medium mt-4">Widerruf Ihrer Einwilligung</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Widerruf Ihrer Einwilligung</h3>
               <p>
                 Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. 
                 Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. 
                 Dazu reicht eine formlose Mitteilung per Email an uns.
               </p>
               
-              <h3 className="text-xl font-medium mt-4">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
               <p>
                 Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein Beschwerderecht 
                 bei der zuständigen Aufsichtsbehörde zu.
               </p>
               
-              <h3 className="text-xl font-medium mt-4">Recht auf Datenübertragbarkeit</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Recht auf Datenübertragbarkeit</h3>
               <p>
                 Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in 
                 Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten 
@@ -95,9 +95,9 @@ export default function DatenschutzPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">4. Datenerfassung auf dieser Website</h2>
-            <div className="text-gray-300 space-y-4">
-              <h3 className="text-xl font-medium mt-4">Server-Log-Dateien</h3>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">4. Datenerfassung auf dieser Website</h2>
+            <div className="text-gray-700 space-y-4">
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Server-Log-Dateien</h3>
               <p>
                 Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten 
                 Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
@@ -114,7 +114,7 @@ export default function DatenschutzPage() {
                 Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
               </p>
 
-              <h3 className="text-xl font-medium mt-4">Kontakt per Email</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Kontakt per Email</h3>
               <p>
                 Wenn Sie uns per Email kontaktieren, werden Ihre mitgeteilten Daten (Email-Adresse, 
                 ggf. Name und Nachricht) zum Zwecke der Bearbeitung der Anfrage bei uns gespeichert. 
@@ -124,8 +124,8 @@ export default function DatenschutzPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">5. Analyse-Tools</h2>
-            <div className="text-gray-300 space-y-4">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">5. Analyse-Tools</h2>
+            <div className="text-gray-700 space-y-4">
               <p>
                 Diese Website nutzt Vercel Web Analytics zur Analyse des Nutzerverhaltens. 
                 Vercel Analytics ist ein datenschutzfreundliches Analysetool, das keine 
@@ -139,8 +139,8 @@ export default function DatenschutzPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">6. Plugins und Tools</h2>
-            <div className="text-gray-300">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">6. Plugins und Tools</h2>
+            <div className="text-gray-700">
               <p>
                 Auf unserer Website sind keine externen Plugins oder Tools von Drittanbietern integriert, 
                 die personenbezogene Daten erfassen.
@@ -149,8 +149,8 @@ export default function DatenschutzPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">7. Ihre Rechte</h2>
-            <div className="text-gray-300 space-y-4">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">7. Ihre Rechte</h2>
+            <div className="text-gray-700 space-y-4">
               <p>Sie haben jederzeit das Recht auf:</p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li><strong>Auskunft</strong> über Ihre gespeicherten Daten</li>
@@ -163,14 +163,14 @@ export default function DatenschutzPage() {
               <p>
                 Für alle datenschutzrechtlichen Anfragen wenden Sie sich bitte an:
                 <br />
-                <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-400 hover:underline">
+                <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-600 hover:underline">
                   axiom.ceo@agentmail.to
                 </a>
               </p>
             </div>
           </section>
 
-          <div className="mt-12 pt-8 border-t border-gray-800">
+          <div className="mt-12 pt-8 border-t border-gray-200">
             <p className="text-gray-500 text-sm">
               Stand: April 2026
             </p>
@@ -178,7 +178,7 @@ export default function DatenschutzPage() {
         </div>
 
         <div className="mt-12">
-          <a href="/" className="text-blue-400 hover:underline">← Zurück zur Startseite</a>
+          <a href="/" className="text-blue-600 hover:underline">← Zurück zur Startseite</a>
         </div>
       </div>
     </main>

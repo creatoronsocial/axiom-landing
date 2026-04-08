@@ -1,23 +1,23 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-gray-900">
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Axiom Labs
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8">
             OpenClaw Products for AI Operators
           </p>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12">
+          <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12">
             Battle-tested skill packs for OpenClaw agents.
             From Paperclip task management to overnight automation — install in minutes, not days.
           </p>
           <div className="flex gap-4 justify-center">
             <a
               href="#products"
-              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition"
+              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition"
             >
               Browse Products
             </a>
@@ -25,7 +25,7 @@ export default function Home() {
               href="https://github.com/axiomlabs"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 border border-gray-600 hover:border-gray-400 rounded-lg font-medium transition"
+              className="px-8 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg font-medium transition"
             >
               GitHub
             </a>
@@ -34,8 +34,8 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="container mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Products</h2>
+      <section id="products" className="container mx-auto px-6 py-20 bg-gray-50">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Products</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           
           {/* Agent Onboarding Kit */}
@@ -84,46 +84,46 @@ export default function Home() {
       {/* Trust Section */}
       <section className="container mx-auto px-6 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8">Why Axiom Labs?</h2>
+          <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">Why Axiom Labs?</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center">
+            <div className="text-center bg-gray-50 rounded-lg p-6">
               <div className="text-4xl mb-4">🦞</div>
-              <h3 className="font-semibold mb-2">Clawmart Native</h3>
-              <p className="text-gray-400 text-sm">All products optimized for OpenClaw. One-click install via Clawmart API.</p>
+              <h3 className="font-semibold mb-2 text-gray-900">Clawmart Native</h3>
+              <p className="text-gray-600 text-sm">All products optimized for OpenClaw. One-click install via Clawmart API.</p>
             </div>
-            <div className="text-center">
+            <div className="text-center bg-gray-50 rounded-lg p-6">
               <div className="text-4xl mb-4">⚡</div>
-              <h3 className="font-semibold mb-2">Battle Tested</h3>
-              <p className="text-gray-400 text-sm">Every pack runs in production. Real workflows, not theoretical prompts.</p>
+              <h3 className="font-semibold mb-2 text-gray-900">Battle Tested</h3>
+              <p className="text-gray-600 text-sm">Every pack runs in production. Real workflows, not theoretical prompts.</p>
             </div>
-            <div className="text-center">
+            <div className="text-center bg-gray-50 rounded-lg p-6">
               <div className="text-4xl mb-4">🔧</div>
-              <h3 className="font-semibold mb-2">Operator Built</h3>
-              <p className="text-gray-400 text-sm">Created by OpenClaw operators for OpenClaw operators.</p>
+              <h3 className="font-semibold mb-2 text-gray-900">Operator Built</h3>
+              <p className="text-gray-600 text-sm">Created by OpenClaw operators for OpenClaw operators.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-800 mt-20">
+      <footer className="border-t border-gray-200 mt-20 bg-white">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400">© 2026 Axiom Labs. All rights reserved.</p>
+            <p className="text-gray-500">© 2026 Axiom Labs. All rights reserved.</p>
             <div className="flex flex-wrap justify-center gap-6">
-              <a href="mailto:ceo@axiomlabs.systems" className="text-gray-400 hover:text-white transition">
+              <a href="mailto:ceo@axiomlabs.systems" className="text-gray-500 hover:text-gray-900 transition">
                 Contact
               </a>
-              <a href="/impressum" className="text-gray-400 hover:text-white transition">
+              <a href="/impressum" className="text-gray-500 hover:text-gray-900 transition">
                 Impressum
               </a>
-              <a href="/datenschutz" className="text-gray-400 hover:text-white transition">
+              <a href="/datenschutz" className="text-gray-500 hover:text-gray-900 transition">
                 Datenschutz
               </a>
-              <a href="https://twitter.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+              <a href="https://twitter.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 transition">
                 Twitter
               </a>
-              <a href="https://github.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+              <a href="https://github.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 transition">
                 GitHub
               </a>
             </div>
@@ -141,17 +141,17 @@ function ProductCard({ name, price, description, url }: {
   url: string;
 }) {
   return (
-    <div className="bg-gray-900 rounded-lg p-6 hover:bg-gray-800 transition border border-gray-800">
+    <div className="bg-white rounded-lg p-6 hover:bg-gray-50 transition border border-gray-200 shadow-sm hover:shadow-md">
       <div className="flex justify-between items-start mb-4">
-        <h3 className="text-xl font-semibold">{name}</h3>
-        <span className="text-blue-400 font-bold">{price}</span>
+        <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
+        <span className="text-blue-600 font-bold">{price}</span>
       </div>
-      <p className="text-gray-400 mb-6">{description}</p>
+      <p className="text-gray-600 mb-6">{description}</p>
       <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block w-full text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition"
+        className="inline-block w-full text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition"
       >
         Get Started
       </a>

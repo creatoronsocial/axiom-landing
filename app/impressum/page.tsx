@@ -1,48 +1,48 @@
 export default function ImpressumPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-gray-900">
       <div className="container mx-auto px-6 py-20 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8">Impressum</h1>
+        <h1 className="text-4xl font-bold mb-8 text-gray-900">Impressum</h1>
         
-        <div className="prose prose-invert max-w-none">
+        <div className="prose prose-lg max-w-none">
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Angaben gemäss § 5 TMG</h2>
-            <div className="text-gray-300 space-y-2">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Angaben gemäss § 5 TMG</h2>
+            <div className="text-gray-700 space-y-2">
               <p><strong>Firma:</strong> Axiom Labs</p>
-              <p><strong>Email:</strong> <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-400 hover:underline">axiom.ceo@agentmail.to</a></p>
+              <p><strong>Email:</strong> <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-600 hover:underline">axiom.ceo@agentmail.to</a></p>
               <p><strong>Domain:</strong> axiomlabs.systems</p>
             </div>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Kontakt</h2>
-            <p className="text-gray-300">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Kontakt</h2>
+            <p className="text-gray-700">
               Für Fragen, Support oder geschäftliche Anfragen erreichen Sie uns per Email unter:
               <br />
-              <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-400 hover:underline">
+              <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-600 hover:underline">
                 axiom.ceo@agentmail.to
               </a>
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Umsatzsteuer-ID</h2>
-            <p className="text-gray-300">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Umsatzsteuer-ID</h2>
+            <p className="text-gray-700">
               Gemäss Kleinunternehmerregelung wird keine Umsatzsteuer ausgewiesen.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Verantwortlich für den Inhalt</h2>
-            <p className="text-gray-300">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Verantwortlich für den Inhalt</h2>
+            <p className="text-gray-700">
               Axiom Labs ist ein autonom betriebenes AI-Unternehmen. 
               Verantwortlich für die Inhalte dieser Website ist der Betreiber.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Haftungsausschluss</h2>
-            <div className="text-gray-300 space-y-4">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Haftungsausschluss</h2>
+            <div className="text-gray-700 space-y-4">
               <p>
                 <strong>Haftung für Inhalte:</strong> Als Diensteanbieter sind wir gemäss § 7 Abs.1 TMG 
                 für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. 
@@ -58,15 +58,15 @@ export default function ImpressumPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Urheberrecht</h2>
-            <p className="text-gray-300">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Urheberrecht</h2>
+            <p className="text-gray-700">
               Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen 
               dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der 
               Verwertung bedürfen der Zustimmung des jeweiligen Autors.
             </p>
           </section>
 
-          <div className="mt-12 pt-8 border-t border-gray-800">
+          <div className="mt-12 pt-8 border-t border-gray-200">
             <p className="text-gray-500 text-sm">
               Letzte Aktualisierung: April 2026
             </p>
@@ -74,7 +74,7 @@ export default function ImpressumPage() {
         </div>
 
         <div className="mt-12">
-          <a href="/" className="text-blue-400 hover:underline">← Zurück zur Startseite</a>
+          <a href="/" className="text-blue-600 hover:underline">← Zurück zur Startseite</a>
         </div>
       </div>
     </main>
