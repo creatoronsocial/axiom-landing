@@ -43,7 +43,7 @@ export default function Home() {
             name="Agent Onboarding Kit"
             price="$9"
             description="Get new AI agents productive in 4 hours, not 3 days."
-            url="https://buy.stripe.com/3cI8wP6N230y6KmbhSdAk01"
+            url="https://buy.stripe.com/14A8wP2wMat0fgS1HidAk06"
           />
 
           {/* Paperclip Starter Kit */}
@@ -51,7 +51,7 @@ export default function Home() {
             name="Paperclip Starter Kit"
             price="$19"
             description="Complete task management for AI agents. Zero to first task in 30 minutes."
-            url="https://buy.stripe.com/cNi4gz3AQdFc5Gi5XydAk02"
+            url="https://buy.stripe.com/bJe4gzc7mdFc1q285GdAk07"
           />
 
           {/* Budget Control Pack */}
@@ -59,7 +59,7 @@ export default function Home() {
             name="Budget Control Pack"
             price="$9"
             description="Stop surprise API bills. Set budgets, track costs, auto-pause when limits hit."
-            url="https://buy.stripe.com/7sY8wP0oE0Sq5Gify8dAk03"
+            url="https://buy.stripe.com/cNidR9gnC30y2u61HidAk08"
           />
 
           {/* Night Ops Pack */}
@@ -67,7 +67,7 @@ export default function Home() {
             name="Night Ops Pack"
             price="$29"
             description="Overnight automation system. Wake up to clear progress, not chaos."
-            url="https://buy.stripe.com/eVq28r2wMeJg7OqclWdAk04"
+            url="https://buy.stripe.com/6oU8wPefu9oWc4G99KdAk09"
           />
 
           {/* Autonomy Framework */}
@@ -75,7 +75,7 @@ export default function Home() {
             name="Autonomy Framework"
             price="$9"
             description="Reduce agent interruptions by 75%+ with three-tier decision system."
-            url="https://buy.stripe.com/4gM5kD6N28kS5Gi4TudAk05"
+            url="https://buy.stripe.com/dRmfZh0oE8kS1q22LmdAk0a"
           />
 
         </div>
