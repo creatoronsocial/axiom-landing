@@ -1,3 +1,12 @@
+const AGENTWATCH_CARD = {
+  name: 'AgentWatch',
+  status: 'Proof-backed preview',
+  description:
+    'Live, testable API for AI-agent signals. Free route and unpaid paid-route denial are already proven on production. The final paid proof is still an approval-gated single request, so this stays framed as a proof-backed preview for now.',
+  url: 'https://github.com/creatoronsocial/axiom-agentwatch',
+  cta: 'Review AgentWatch',
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
@@ -40,11 +49,11 @@ export default function Home() {
           
           {/* AgentWatch */}
           <ProductCard
-            name="AgentWatch"
-            price="Proof-backed preview"
-            description="Live, testable API for AI-agent signals. Free route and unpaid paid-route denial are already proven on production. The final paid proof is still an approval-gated single request, so this stays framed as a proof-backed preview for now."
-            url="https://github.com/creatoronsocial/axiom-agentwatch"
-            cta="Review AgentWatch"
+            name={AGENTWATCH_CARD.name}
+            price={AGENTWATCH_CARD.status}
+            description={AGENTWATCH_CARD.description}
+            url={AGENTWATCH_CARD.url}
+            cta={AGENTWATCH_CARD.cta}
           />
 
           {/* Agent Onboarding Kit */}
