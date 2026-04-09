@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function DatenschutzPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
@@ -178,7 +180,7 @@ export default function DatenschutzPage() {
         </div>
 
         <div className="mt-12">
-          <a href="/" className="text-blue-600 hover:underline">← Zurück zur Startseite</a>
+          <Link href="/" className="text-blue-600 hover:underline">← Zurück zur Startseite</Link>
         </div>
       </div>
     </main>
