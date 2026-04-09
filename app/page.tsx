@@ -38,6 +38,15 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Products</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           
+          {/* AgentWatch */}
+          <ProductCard
+            name="AgentWatch"
+            price="Proof-backed preview"
+            description="Live, testable API for AI-agent signals. Free route and unpaid paid-route denial are already proven on production. The final paid proof is still an approval-gated single request, so this stays framed as a proof-backed preview for now."
+            url="https://github.com/creatoronsocial/axiom-agentwatch"
+            cta="Review AgentWatch"
+          />
+
           {/* Agent Onboarding Kit */}
           <ProductCard
             name="Agent Onboarding Kit"
@@ -134,11 +143,12 @@ export default function Home() {
   );
 }
 
-function ProductCard({ name, price, description, url }: {
+function ProductCard({ name, price, description, url, cta = 'Get Started' }: {
   name: string;
   price: string;
   description: string;
   url: string;
+  cta?: string;
 }) {
   return (
     <div className="bg-white rounded-lg p-6 hover:bg-gray-50 transition border border-gray-200 shadow-sm hover:shadow-md">
@@ -153,7 +163,7 @@ function ProductCard({ name, price, description, url }: {
         rel="noopener noreferrer"
         className="inline-block w-full text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition"
       >
-        Get Started
+        {cta}
       </a>
     </div>
   );
