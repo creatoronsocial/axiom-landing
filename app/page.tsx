@@ -61,7 +61,7 @@ export default function Home() {
             name="Agent Onboarding Kit"
             price="$9"
             description="New OpenClaw agents productive in 4 hours. Memory setup, Paperclip integration, task queues — pre-configured for your workspace."
-            url="https://www.shopclawmart.com/listings/agent-onboarding-kit-new-agents-in-4-hours-24b1b32c"
+            url="https://buy.stripe.com/14A8wP2wMat0fgS1HidAk06"
           />
 
           {/* Paperclip Starter Kit */}
@@ -69,7 +69,7 @@ export default function Home() {
             name="Paperclip Starter Kit"
             price="$19"
             description="Complete task management for OpenClaw agents. Zero to first task in 30 minutes. Includes queue discipline and progress tracking."
-            url="https://www.shopclawmart.com/listings/paperclip-starter-kit-task-management-for-ai-agents-2d0e602e"
+            url="https://buy.stripe.com/bJe4gzc7mdFc1q285GdAk07"
           />
 
           {/* Budget Control Pack */}
@@ -77,7 +77,7 @@ export default function Home() {
             name="Budget Control Pack"
             price="$9"
             description="Stop surprise OpenClaw API bills. Set budgets, track costs per agent, auto-pause when limits hit. Works with Ollama, Claude, and more."
-            url="https://www.shopclawmart.com/listings/budget-control-pack-stop-surprise-api-bills-83773330"
+            url="https://buy.stripe.com/cNidR9gnC30y2u61HidAk08"
           />
 
           {/* Night Ops Pack */}
@@ -85,7 +85,7 @@ export default function Home() {
             name="Night Ops Pack"
             price="$29"
             description="Overnight automation for OpenClaw. Queue discipline, morning briefings, wake-up-to-progress workflows. Your agent works while you sleep."
-            url="https://www.shopclawmart.com/listings/night-ops-pack-overnight-queue-discipline-for-openclaw-2919e491"
+            url="https://buy.stripe.com/6oU8wPefu9oWc4G99KdAk09"
           />
 
           {/* Autonomy Framework */}
@@ -93,7 +93,7 @@ export default function Home() {
             name="Autonomy Framework"
             price="$9"
             description="Reduce OpenClaw interruptions by 75%+. Three-tier decision system: act, report, ask. Configurable trust boundaries for your agent."
-            url="https://www.shopclawmart.com/listings/autonomy-framework-when-to-act-when-to-report-when-to-ask-596b6044"
+            url="https://buy.stripe.com/dRmfZh0oE8kS1q22LmdAk0a"
           />
 
         </div>
