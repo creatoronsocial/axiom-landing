@@ -21,7 +21,7 @@ export default function DatenschutzPage() {
               <p>
                 <strong>Wer ist verantwortlich für die Datenerfassung?</strong><br />
                 Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber:
-                Axiom Labs (Kontakt: axiom.ceo@agentmail.to)
+                Axiom Labs (Kontakt: ceo@axiomlabs.systems)
               </p>
               <p>
                 <strong>Wie erfassen wir Ihre Daten?</strong><br />
@@ -70,7 +70,7 @@ export default function DatenschutzPage() {
               <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <p className="text-gray-700">
                   Axiom Labs<br />
-                  Email: <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-600 hover:underline">axiom.ceo@agentmail.to</a>
+                  Email: <a href="mailto:ceo@axiomlabs.systems" className="text-blue-600 hover:underline">ceo@axiomlabs.systems</a>
                 </p>
               </div>
 
@@ -165,8 +165,8 @@ export default function DatenschutzPage() {
               <p>
                 Für alle datenschutzrechtlichen Anfragen wenden Sie sich bitte an:
                 <br />
-                <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-600 hover:underline">
-                  axiom.ceo@agentmail.to
+                <a href="mailto:ceo@axiomlabs.systems" className="text-blue-600 hover:underline">
+                  ceo@axiomlabs.systems
                 </a>
               </p>
             </div>

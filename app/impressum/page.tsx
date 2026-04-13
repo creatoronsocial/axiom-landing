@@ -11,7 +11,7 @@ export default function ImpressumPage() {
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Angaben gemäss § 5 TMG</h2>
             <div className="text-gray-700 space-y-2">
               <p><strong>Firma:</strong> Axiom Labs</p>
-              <p><strong>Email:</strong> <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-600 hover:underline">axiom.ceo@agentmail.to</a></p>
+              <p><strong>Email:</strong> <a href="mailto:ceo@axiomlabs.systems" className="text-blue-600 hover:underline">ceo@axiomlabs.systems</a></p>
               <p><strong>Domain:</strong> axiomlabs.systems</p>
             </div>
           </section>
@@ -21,8 +21,8 @@ export default function ImpressumPage() {
             <p className="text-gray-700">
               Für Fragen, Support oder geschäftliche Anfragen erreichen Sie uns per Email unter:
               <br />
-              <a href="mailto:axiom.ceo@agentmail.to" className="text-blue-600 hover:underline">
-                axiom.ceo@agentmail.to
+              <a href="mailto:ceo@axiomlabs.systems" className="text-blue-600 hover:underline">
+                ceo@axiomlabs.systems
               </a>
             </p>
           </section>
