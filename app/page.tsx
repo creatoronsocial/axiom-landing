@@ -97,14 +97,14 @@ export default function Home() {
           <div>
             <p className="text-sm font-semibold tracking-[0.22em] text-slate-900 uppercase">Axiom Labs</p>
           </div>
-          <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
-            <a href="#products" className="transition hover:text-slate-900">
+          <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
+            <a href="#products" className="transition hover:text-slate-950">
               Products
             </a>
-            <a href="#why" className="transition hover:text-slate-900">
+            <a href="#why" className="transition hover:text-slate-950">
               Why us
             </a>
-            <a href="https://github.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="transition hover:text-slate-900">
+            <a href="https://github.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="transition hover:text-slate-950">
               GitHub
             </a>
           </nav>
@@ -313,34 +313,45 @@ function ProductCard({
           : 'border-slate-200 bg-white shadow-[0_18px_55px_rgba(15,23,42,0.05)]'
       }`}
     >
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <div className="mb-4 flex flex-wrap items-center gap-2">
-            {featured ? (
-              <span className="inline-flex rounded-full border border-sky-200 bg-white px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-sky-700">
-                Featured
-              </span>
-            ) : null}
-            {kind ? (
-              <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-slate-600">
-                {kind}
-              </span>
-            ) : null}
+      <div className="flex flex-col gap-4">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              {featured ? (
+                <span className="inline-flex rounded-full border border-sky-200 bg-white px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-sky-700">
+                  Featured
+                </span>
+              ) : null}
+              {kind ? (
+                <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-slate-600">
+                  {kind}
+                </span>
+              ) : null}
+            </div>
+            <h3 className="text-2xl font-semibold tracking-[-0.04em] text-slate-950">{name}</h3>
           </div>
-          <h3 className="text-2xl font-semibold tracking-[-0.04em] text-slate-950">{name}</h3>
         </div>
-        <span className={`rounded-full px-3 py-1 text-sm font-semibold ${featured ? 'bg-sky-600 text-white' : 'bg-slate-100 text-slate-700'}`}>
-          {price}
-        </span>
+
+        {featured ? (
+          <div className="flex items-center gap-3">
+            <span className="inline-flex rounded-full bg-sky-600 px-3 py-1 text-sm font-semibold text-white">
+              {price}
+            </span>
+          </div>
+        ) : (
+          <span className="w-fit rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-700">
+            {price}
+          </span>
+        )}
       </div>
 
-      <p className="mt-5 text-sm leading-7 text-slate-600">{description}</p>
+      <p className="mt-4 text-sm leading-7 text-slate-600">{description}</p>
 
       <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className={`mt-7 inline-flex w-full items-center justify-center rounded-full px-4 py-3 text-sm font-medium transition ${
+        className={`mt-6 inline-flex w-full items-center justify-center rounded-full px-4 py-3 text-sm font-medium transition ${
           featured
             ? 'bg-slate-950 text-white hover:bg-slate-800'
             : 'border border-slate-200 bg-white text-slate-800 hover:border-slate-300 hover:bg-slate-50'
