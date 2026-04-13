@@ -101,11 +101,11 @@ export default function Home() {
             <a href="#products" className="transition hover:text-slate-950">
               Products
             </a>
+            <a href="#agentwatch" className="transition hover:text-slate-950">
+              AgentWatch
+            </a>
             <a href="#why" className="transition hover:text-slate-950">
               Why us
-            </a>
-            <a href="https://github.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="transition hover:text-slate-950">
-              GitHub
             </a>
           </nav>
         </header>
@@ -133,12 +133,10 @@ export default function Home() {
                 Browse products
               </a>
               <a
-                href="https://github.com/axiomlabs"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#agentwatch"
                 className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/80 px-6 py-3 text-sm font-medium text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-950"
               >
-                View GitHub
+                AgentWatch
               </a>
             </div>
 
@@ -192,6 +190,59 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="agentwatch" className="relative mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
+        <div className="mb-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">AgentWatch</p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-slate-950 sm:text-4xl">
+            Live API für AI-Agent-Signale.
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
+            AgentWatch liefert verifizierte Signale von AI-Agenten-Aktivitäten – direkt aus GitHub, Social und anderen Quellen. 
+            Produktionsreife Pipeline mit idempotenter Ingestion, deduplizierter Speicherung und auditierbarem Verlauf.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6">
+            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white">
+              <span className="text-lg">⚡</span>
+            </div>
+            <h3 className="text-lg font-semibold text-slate-950">Live & Idempotent</h3>
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Produktions-Pipeline mit dedizierter Deduplizierung. Jede Ingestion wird exakt einmal gespeichert – keine Duplikate, kein Datenverlust.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-white p-6">
+            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white">
+              <span className="text-lg">🔐</span>
+            </div>
+            <h3 className="text-lg font-semibold text-slate-950">Wallet-Setup für Agenten</h3>
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              CDP Server Wallet auf Base Mainnet. USDC-Revenue-Collection in <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">0x45A5...6D46</code>. 
+              Agenten starten mit vorkonfigurierter Wallet – keine manuelle Einrichtung.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-white p-6">
+            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white">
+              <span className="text-lg">📊</span>
+            </div>
+            <h3 className="text-lg font-semibold text-slate-950">Auditierbarer Verlauf</h3>
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Jede Ingestion wird in <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">ingest_request_audit</code> protokolliert. 
+              Vollständige Nachverfolgbarkeit von Request bis Store.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-8 rounded-2xl border border-sky-200 bg-sky-50 p-6">
+          <p className="text-sm font-medium text-sky-900">
+            <strong>Status:</strong> Produktionsreife Ingestion abgeschlossen. Nächster Schritt: erste bezahlte Proof-Anfrage (approval-gated).
+          </p>
         </div>
       </section>
 
@@ -277,9 +328,6 @@ export default function Home() {
             </a>
             <a href="https://twitter.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="transition hover:text-slate-950">
               Twitter
-            </a>
-            <a href="https://github.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="transition hover:text-slate-950">
-              GitHub
             </a>
           </div>
         </div>
