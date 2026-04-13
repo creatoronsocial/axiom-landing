@@ -1,38 +1,37 @@
 import Link from 'next/link';
 
-export default function DatenschutzPage() {
+export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
       <div className="container mx-auto px-6 py-20 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8 text-gray-900">Datenschutzerklärung</h1>
+        <h1 className="text-4xl font-bold mb-8 text-gray-900">Privacy Policy</h1>
         
         <div className="prose prose-lg max-w-none">
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">1. Datenschutz auf einen Blick</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">1. Privacy at a Glance</h2>
             <div className="text-gray-700 space-y-4">
-              <h3 className="text-xl font-medium mt-4 text-gray-900">Allgemeine Hinweise</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">General Information</h3>
               <p>
-                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren 
-                personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene 
-                Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+                The following notes provide a simple overview of what happens to your personal data 
+                when you visit this website. Personal data is any data that can personally identify you.
               </p>
               
-              <h3 className="text-xl font-medium mt-4 text-gray-900">Datenerfassung auf dieser Website</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Data Collection on This Website</h3>
               <p>
-                <strong>Wer ist verantwortlich für die Datenerfassung?</strong><br />
-                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber:
-                Axiom Labs (Kontakt: ceo@axiomlabs.systems)
+                <strong>Who is responsible for data collection?</strong><br />
+                Data processing on this website is carried out by the website operator:
+                Axiom Labs (Contact: ceo@axiomlabs.systems)
               </p>
               <p>
-                <strong>Wie erfassen wir Ihre Daten?</strong><br />
-                Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. 
-                Zum anderen werden beim Besuch der Website durch unsere IT-Systeme automatisch 
-                technische Daten erfasst (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).
+                <strong>How do we collect your data?</strong><br />
+                Some data is collected when you provide it to us. Other data is automatically 
+                collected by our IT systems when you visit the website (e.g., internet browser, 
+                operating system, or time of page access).
               </p>
               <p>
-                <strong>Wofür nutzen wir Ihre Daten?</strong><br />
-                Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website 
-                zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.
+                <strong>What do we use your data for?</strong><br />
+                Some data is collected to ensure the website is provided without errors. 
+                Other data may be used to analyze your user behavior.
               </p>
             </div>
           </section>
@@ -41,31 +40,29 @@ export default function DatenschutzPage() {
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">2. Hosting</h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Wir hosten unsere Website bei einem externen Dienstleister (Hoster). 
-                Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf 
-                den Servern des Hosters gespeichert.
+                We host our website with an external service provider (hoster). 
+                Personal data collected on this website is stored on the hoster's servers.
               </p>
               <p>
-                <strong>Verwendeter Hoster:</strong> Vercel Inc.<br />
-                Vercel ist spezialisiert auf das Hosting von Web-Anwendungen und unterliegt 
-                strengen Datenschutzstandards.
+                <strong>Hoster used:</strong> Vercel Inc.<br />
+                Vercel specializes in hosting web applications and is subject to strict data protection standards.
               </p>
             </div>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">3. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">3. General Information and Mandatory Information</h2>
             <div className="text-gray-700 space-y-4">
-              <h3 className="text-xl font-medium mt-4 text-gray-900">Datenschutz</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Data Protection</h3>
               <p>
-                Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. 
-                Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der 
-                gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+                The operators of this website take the protection of your personal data very seriously. 
+                We treat your personal data confidentially and in accordance with legal data protection 
+                regulations and this privacy policy.
               </p>
               
-              <h3 className="text-xl font-medium mt-4 text-gray-900">Hinweis zur verantwortlichen Stelle</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Notice About the Responsible Party</h3>
               <p>
-                Verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
+                The party responsible for data processing on this website is:
               </p>
               <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                 <p className="text-gray-700">
@@ -74,96 +71,95 @@ export default function DatenschutzPage() {
                 </p>
               </div>
 
-              <h3 className="text-xl font-medium mt-4 text-gray-900">Widerruf Ihrer Einwilligung</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Revocation of Your Consent</h3>
               <p>
-                Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. 
-                Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. 
-                Dazu reicht eine formlose Mitteilung per Email an uns.
+                Many data processing operations are only possible with your express consent. 
+                You can revoke consent already given at any time. An informal notification by 
+                email to us is sufficient for this purpose.
               </p>
               
-              <h3 className="text-xl font-medium mt-4 text-gray-900">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Right to Complain to the Responsible Supervisory Authority</h3>
               <p>
-                Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein Beschwerderecht 
-                bei der zuständigen Aufsichtsbehörde zu.
+                In the event of data protection law violations, the data subject has a right of 
+                appeal to the responsible supervisory authority.
               </p>
               
-              <h3 className="text-xl font-medium mt-4 text-gray-900">Recht auf Datenübertragbarkeit</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Right to Data Portability</h3>
               <p>
-                Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in 
-                Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten 
-                in einem gängigen, maschinenlesbaren Format aushändigen zu lassen.
+                You have the right to have data that we process automatically on the basis of your 
+                consent or in fulfillment of a contract handed over to you or a third party in a 
+                common, machine-readable format.
               </p>
             </div>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">4. Datenerfassung auf dieser Website</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">4. Data Collection on This Website</h2>
             <div className="text-gray-700 space-y-4">
-              <h3 className="text-xl font-medium mt-4 text-gray-900">Server-Log-Dateien</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Server Log Files</h3>
               <p>
-                Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten 
-                Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+                The provider of the pages automatically collects and stores information in so-called 
+                server log files, which your browser automatically transmits to us. These are:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Browsertyp und Browserversion</li>
-                <li>Verwendetes Betriebssystem</li>
+                <li>Browser type and browser version</li>
+                <li>Operating system used</li>
                 <li>Referrer URL</li>
-                <li>Hostname des zugreifenden Rechners</li>
-                <li>Uhrzeit der Serveranfrage</li>
-                <li>IP-Adresse</li>
+                <li>Hostname of the accessing computer</li>
+                <li>Time of server request</li>
+                <li>IP address</li>
               </ul>
               <p>
-                Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+                This data is not merged with other data sources.
               </p>
 
-              <h3 className="text-xl font-medium mt-4 text-gray-900">Kontakt per Email</h3>
+              <h3 className="text-xl font-medium mt-4 text-gray-900">Contact by Email</h3>
               <p>
-                Wenn Sie uns per Email kontaktieren, werden Ihre mitgeteilten Daten (Email-Adresse, 
-                ggf. Name und Nachricht) zum Zwecke der Bearbeitung der Anfrage bei uns gespeichert. 
-                Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+                If you contact us by email, your data (email address, possibly name and message) 
+                will be stored for the purpose of processing the inquiry. We do not pass on this 
+                data without your consent.
               </p>
             </div>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">5. Analyse-Tools</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">5. Analytics Tools</h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Diese Website nutzt Vercel Web Analytics zur Analyse des Nutzerverhaltens. 
-                Vercel Analytics ist ein datenschutzfreundliches Analysetool, das keine 
-                personenbezogenen Daten speichert und keine Cookies verwendet.
+                This website uses Vercel Web Analytics to analyze user behavior. 
+                Vercel Analytics is a privacy-friendly analytics tool that does not store 
+                personal data and does not use cookies.
               </p>
               <p>
-                Die erhobenen Daten sind anonymisiert und können nicht auf einzelne Personen 
-                zurückgeführt werden.
+                The collected data is anonymized and cannot be traced back to individual persons.
               </p>
             </div>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">6. Plugins und Tools</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">6. Plugins and Tools</h2>
             <div className="text-gray-700">
               <p>
-                Auf unserer Website sind keine externen Plugins oder Tools von Drittanbietern integriert, 
-                die personenbezogene Daten erfassen.
+                No external plugins or tools from third-party providers that collect personal data 
+                are integrated on our website.
               </p>
             </div>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">7. Ihre Rechte</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">7. Your Rights</h2>
             <div className="text-gray-700 space-y-4">
-              <p>Sie haben jederzeit das Recht auf:</p>
+              <p>You have the right at any time to:</p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li><strong>Auskunft</strong> über Ihre gespeicherten Daten</li>
-                <li><strong>Berichtigung</strong> falscher Daten</li>
-                <li><strong>Löschung</strong> Ihrer Daten (sofern gesetzliche Aufbewahrungspflichten nicht entgegenstehen)</li>
-                <li><strong>Einschränkung</strong> der Verarbeitung</li>
-                <li><strong>Widerspruch</strong> gegen die Verarbeitung</li>
-                <li><strong>Datenübertragbarkeit</strong></li>
+                <li><strong>Information</strong> about your stored data</li>
+                <li><strong>Correction</strong> of incorrect data</li>
+                <li><strong>Deletion</strong> of your data (unless legal retention periods apply)</li>
+                <li><strong>Restriction</strong> of processing</li>
+                <li><strong>Objection</strong> to processing</li>
+                <li><strong>Data portability</strong></li>
               </ul>
               <p>
-                Für alle datenschutzrechtlichen Anfragen wenden Sie sich bitte an:
+                For all data protection inquiries, please contact:
                 <br />
                 <a href="mailto:ceo@axiomlabs.systems" className="text-blue-600 hover:underline">
                   ceo@axiomlabs.systems
@@ -174,13 +170,13 @@ export default function DatenschutzPage() {
 
           <div className="mt-12 pt-8 border-t border-gray-200">
             <p className="text-gray-500 text-sm">
-              Stand: April 2026
+              Last updated: April 2026
             </p>
           </div>
         </div>
 
         <div className="mt-12">
-          <Link href="/" className="text-blue-600 hover:underline">← Zurück zur Startseite</Link>
+          <Link href="/" className="text-blue-600 hover:underline">← Back to homepage</Link>
         </div>
       </div>
     </main>

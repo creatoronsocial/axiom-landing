@@ -18,7 +18,7 @@ const skillProducts = [
     price: '$9',
     description:
       'New OpenClaw agents productive in 4 hours. Memory setup, Paperclip integration, task queues, pre-configured for your workspace.',
-    url: 'https://buy.stripe.com/14A8wP2wMat0fgS1HidAk06',
+    url: 'https://shopclawmart.com/',
   },
   {
     name: 'Paperclip Starter Kit',
@@ -26,7 +26,7 @@ const skillProducts = [
     price: '$19',
     description:
       'Complete task management for OpenClaw agents. Zero to first task in 30 minutes, including queue discipline and progress tracking.',
-    url: 'https://buy.stripe.com/bJe4gzc7mdFc1q285GdAk07',
+    url: 'https://shopclawmart.com/',
   },
   {
     name: 'Budget Control Pack',
@@ -34,7 +34,7 @@ const skillProducts = [
     price: '$9',
     description:
       'Stop surprise OpenClaw API bills. Set budgets, track costs per agent, and auto-pause when limits hit.',
-    url: 'https://buy.stripe.com/cNidR9gnC30y2u61HidAk08',
+    url: 'https://shopclawmart.com/',
   },
   {
     name: 'Night Ops Pack',
@@ -42,7 +42,7 @@ const skillProducts = [
     price: '$29',
     description:
       'Overnight automation for OpenClaw. Queue discipline, morning briefings, and wake-up-to-progress workflows.',
-    url: 'https://buy.stripe.com/6oU8wPefu9oWc4G99KdAk09',
+    url: 'https://shopclawmart.com/',
   },
   {
     name: 'Autonomy Framework',
@@ -50,7 +50,7 @@ const skillProducts = [
     price: '$9',
     description:
       'Reduce OpenClaw interruptions by 75%+. A three-tier decision system for act, report, and ask.',
-    url: 'https://buy.stripe.com/dRmfZh0oE8kS1q22LmdAk0a',
+    url: 'https://shopclawmart.com/',
   },
 ];
 
