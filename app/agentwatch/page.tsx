@@ -3,7 +3,6 @@ import Link from 'next/link';
 export default function AgentWatch() {
   return (
     <main className="relative min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-      {/* Hero */}
       <section className="relative mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <div className="mb-12">
           <Link
@@ -17,7 +16,7 @@ export default function AgentWatch() {
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-sky-100 bg-white/80 px-4 py-2 text-sm text-slate-600 shadow-[0_12px_30px_rgba(15,23,42,0.05)] backdrop-blur">
-              <span className="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500 shadow-[0_0_0_6px_rgba(34,197,94,0.12)] />
+              <span className="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500 shadow-[0_0_0_6px_rgba(34,197,94,0.12)]" />
               Production ready
             </div>
 
@@ -25,7 +24,7 @@ export default function AgentWatch() {
               AgentWatch API
             </h1>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Live, verified signals from AI-agent activity. GitHub pushes, social mentions, 
+              Live, verified signals from AI-agent activity. GitHub pushes, social mentions,
               and more — delivered via a simple REST API with usage-based pricing.
             </p>
 
@@ -64,15 +63,13 @@ export default function AgentWatch() {
                 <p className="text-xs font-medium text-slate-600">Today (requires API key)</p>
               </div>
               <pre className="overflow-x-auto p-4 text-sm text-slate-800">
-                <code>{`curl https://agentwatch.axiomlabs.systems/agent-watch/today \\
-  -H "Authorization: Bearer aw_live_xxx"`}</code>
+                <code>{`curl https://agentwatch.axiomlabs.systems/agent-watch/today \\\n  -H "Authorization: Bearer aw_live_xxx"`}</code>
               </pre>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
           Why AgentWatch?
@@ -84,7 +81,7 @@ export default function AgentWatch() {
             </div>
             <h3 className="text-lg font-semibold text-slate-950">Live & Idempotent</h3>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              Production pipeline with dedicated deduplication. Every ingestion stored exactly once — 
+              Production pipeline with dedicated deduplication. Every ingestion stored exactly once —
               no duplicates, no data loss.
             </p>
           </div>
@@ -95,7 +92,7 @@ export default function AgentWatch() {
             </div>
             <h3 className="text-lg font-semibold text-slate-950">Wallet-Ready for Agents</h3>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              CDP Server Wallet on Base Mainnet. USDC revenue collection pre-configured. 
+              CDP Server Wallet on Base Mainnet. USDC revenue collection pre-configured.
               Agents start with wallet ready — no manual setup.
             </p>
           </div>
@@ -106,26 +103,24 @@ export default function AgentWatch() {
             </div>
             <h3 className="text-lg font-semibold text-slate-950">Auditable History</h3>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              Every ingestion logged in <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">ingest_request_audit</code>. 
+              Every ingestion logged in ingest_request_audit.
               Full traceability from request to store.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Wallet Setup */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <div className="rounded-[2rem] border border-slate-200 bg-white p-8 sm:p-10">
           <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
             Wallet Setup for AI Agents
           </h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-            AgentWatch accepts USDC on Base Mainnet via x402. For AI agents, we recommend 
+            AgentWatch accepts USDC on Base Mainnet via x402. For AI agents, we recommend
             the CDP Server Wallet for automated, non-custodial payments.
           </p>
 
           <div className="mt-8 grid gap-8 lg:grid-cols-2">
-            {/* CDP Server Wallet */}
             <div>
               <h3 className="mb-4 text-lg font-semibold text-slate-950">
                 Option 1: CDP Server Wallet (Recommended for Agents)
@@ -145,11 +140,7 @@ export default function AgentWatch() {
                   <div>
                     <p className="font-medium">Create Server Wallet</p>
                     <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
-                      <code>{`import { Wallet } from '@coinbase/coinbase-sdk';
-
-const wallet = await Wallet.create({
-  networkId: 'base-mainnet'
-});`}</code>
+                      <code>{`import { Wallet } from '@coinbase/coinbase-sdk';\n\nconst wallet = await Wallet.create({\n  networkId: 'base-mainnet'\n});`}</code>
                     </pre>
                   </div>
                 </li>
@@ -173,18 +164,13 @@ const wallet = await Wallet.create({
                   <div>
                     <p className="font-medium">Make x402 Payment</p>
                     <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
-                      <code>{`const payment = await wallet.createTransfer({
-  amount: "0.01",
-  tokenId: "usdc",
-  destination: "0x45A5254593a1a327B5644b498D22228b40EC6D46"
-});`}</code>
+                      <code>{`const payment = await wallet.createTransfer({\n  amount: "0.01",\n  tokenId: "usdc",\n  destination: "0x45A5254593a1a327B5644b498D22228b40EC6D46"\n});`}</code>
                     </pre>
                   </div>
                 </li>
               </ol>
             </div>
 
-            {/* Alternative Wallets */}
             <div>
               <h3 className="mb-4 text-lg font-semibold text-slate-950">
                 Option 2: Standard Wallet (MetaMask, Coinbase Wallet)
@@ -195,10 +181,7 @@ const wallet = await Wallet.create({
                   <div>
                     <p className="font-medium">Add Base Mainnet to Wallet</p>
                     <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
-                      <code>{`Network: Base Mainnet
-Chain ID: 8453
-RPC: https://mainnet.base.org
-Currency: ETH`}</code>
+                      <code>{`Network: Base Mainnet\nChain ID: 8453\nRPC: https://mainnet.base.org\nCurrency: ETH`}</code>
                     </pre>
                   </div>
                 </li>
@@ -207,9 +190,7 @@ Currency: ETH`}</code>
                   <div>
                     <p className="font-medium">Add USDC Token</p>
                     <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
-                      <code>{`Contract: 0x833589fCD6eDb6E08f4c7C32D4f71d54bdA488d6
-Symbol: USDC
-Decimals: 6`}</code>
+                      <code>{`Contract: 0x833589fCD6eDb6E08f4c7C32D4f71d54bdA488d6\nSymbol: USDC\nDecimals: 6`}</code>
                     </pre>
                   </div>
                 </li>
@@ -229,7 +210,7 @@ Decimals: 6`}</code>
                   <div>
                     <p className="font-medium">Pay via x402</p>
                     <p className="mt-1 text-slate-600">
-                      When you hit a paid endpoint, the 402 response includes 
+                      When you hit a paid endpoint, the 402 response includes
                       payment requirements. Sign and submit to unlock access.
                     </p>
                   </div>
@@ -238,23 +219,20 @@ Decimals: 6`}</code>
             </div>
           </div>
 
-          {/* Info Box */}
           <div className="mt-8 rounded-xl border border-sky-200 bg-sky-50 p-6">
             <p className="text-sm font-medium text-sky-900">
-              <strong>Tip:</strong> For production AI agents, use CDP Server Wallet with API key auth. 
+              <strong>Tip:</strong> For production AI agents, use CDP Server Wallet with API key auth.
               For testing or one-off payments, use x402 with any Base-compatible wallet.
             </p>
           </div>
         </div>
       </section>
 
-      {/* API Routes */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
           API Reference
         </h2>
         <div className="space-y-4">
-          {/* GET /agent-watch/yesterday */}
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
             <div className="border-b border-slate-200 bg-slate-50 px-6 py-4">
               <div className="flex items-center gap-3">
@@ -268,7 +246,6 @@ Decimals: 6`}</code>
             </div>
           </div>
 
-          {/* GET /agent-watch/today */}
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
             <div className="border-b border-slate-200 bg-slate-50 px-6 py-4">
               <div className="flex items-center gap-3">
@@ -282,7 +259,6 @@ Decimals: 6`}</code>
             </div>
           </div>
 
-          {/* GET /agent-watch/archive */}
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
             <div className="border-b border-slate-200 bg-slate-50 px-6 py-4">
               <div className="flex items-center gap-3">
@@ -296,7 +272,6 @@ Decimals: 6`}</code>
             </div>
           </div>
 
-          {/* GET /health */}
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
             <div className="border-b border-slate-200 bg-slate-50 px-6 py-4">
               <div className="flex items-center gap-3">
@@ -312,7 +287,6 @@ Decimals: 6`}</code>
         </div>
       </section>
 
-      {/* CTA */}
       <section className="mx-auto w-full max-w-7xl px-6 pb-20 sm:px-8 lg:px-10">
         <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10 text-center">
           <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
@@ -340,7 +314,6 @@ Decimals: 6`}</code>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="border-t border-slate-200/80 bg-white/90">
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-10">
           <p>© 2026 Axiom Labs. All rights reserved.</p>
