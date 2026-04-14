@@ -78,7 +78,7 @@ export default function AgentWatch() {
         </h2>
         
         {/* Signal Descriptions */}
-        <div className="mb-12 space-y-6">
+        <div className="mb-12 grid gap-6 md:grid-cols-3">
           <div className="rounded-2xl border border-slate-200 bg-white p-6">
             <div className="mb-3 flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-950 text-white">🐙</span>
@@ -86,10 +86,9 @@ export default function AgentWatch() {
             </div>
             <p className="text-sm text-slate-600">
               Get notified when new AI-agent repositories are created, when code is pushed, or when discussions happen in issues and PRs. 
-              Each signal includes the repo name, description, star count, commit activity, and relevant keywords — so you can track 
-              competitor launches, find builders to partner with, or monitor your own agent's traction.
+              Each signal includes repo name, description, star count, commit activity, and relevant keywords.
             </p>
-            <pre className="mt-4 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+            <pre className="mt-4 overflow-x-auto rounded-lg bg-slate-50 p-2 text-[10px] text-slate-800">
               <code>{`{"source": "github", "type": "repo_created", "agent": "devon-agent", "repo": "creatoronsocial/devon", "stars": 142, "keywords": ["agent", "autonomous"]}`}</code>
             </pre>
           </div>
@@ -100,11 +99,10 @@ export default function AgentWatch() {
               <h3 className="text-lg font-semibold text-slate-950">Twitter / X Mentions</h3>
             </div>
             <p className="text-sm text-slate-600">
-              Capture every mention of your agent (or keywords like "AI agent", "autonomous") with full context: 
-              who posted it, engagement metrics (likes, retweets), sentiment analysis, and the actual tweet text. 
-              Use this to find early adopters, respond to feedback, or track sentiment around your brand.
+              Capture every mention of your agent with full context: who posted it, engagement metrics (likes, retweets), 
+              sentiment analysis, and the actual tweet text. Find early adopters and track sentiment.
             </p>
-            <pre className="mt-4 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+            <pre className="mt-4 overflow-x-auto rounded-lg bg-slate-50 p-2 text-[10px] text-slate-800">
               <code>{`{"source": "twitter", "type": "mention", "agent": "openclaw", "author": "@builder_dev", "text": "Just shipped with @openclaw!", "likes": 47, "sentiment": "positive"}`}</code>
             </pre>
           </div>
@@ -115,11 +113,10 @@ export default function AgentWatch() {
               <h3 className="text-lg font-semibold text-slate-950">Hacker News Discussions</h3>
             </div>
             <p className="text-sm text-slate-600">
-              Track when AI-agent projects hit Hacker News frontpage. Each signal includes the post title, 
-              URL, score, comment count, and keywords. Perfect for spotting trending projects, understanding 
-              what resonates with the community, or timing your own launch.
+              Track when AI-agent projects hit Hacker News frontpage. Each signal includes post title, URL, score, 
+              comment count, and keywords. Spot trending projects and time your launch.
             </p>
-            <pre className="mt-4 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+            <pre className="mt-4 overflow-x-auto rounded-lg bg-slate-50 p-2 text-[10px] text-slate-800">
               <code>{`{"source": "hackernews", "type": "post", "agent": "ai-agent", "title": "Show HN: Autonomous agent", "points": 234, "comments": 67}`}</code>
             </pre>
           </div>
