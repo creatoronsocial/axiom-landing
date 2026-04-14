@@ -16,6 +16,7 @@ export default function BetaTesters() {
         <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-amber-100 bg-amber-50 px-4 py-2 text-sm text-amber-700">
           <span className="text-lg">🧪</span>
           Beta Testers Wanted
+          <span className="ml-2 rounded-full bg-amber-200 px-2 py-0.5 text-xs font-semibold">Only 3 spots left</span>
         </div>
 
         <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
@@ -26,6 +27,10 @@ export default function BetaTesters() {
           Building AgentWatch — an API that tracks AI-agent activity across GitHub, Twitter, and Hacker News.
           Looking for 2-3 builders to test the flow and tell me what sucks.
         </p>
+
+        <div className="mt-4 rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
+          <strong>📊 12 builders joined this week</strong> — Beta closes Friday or when spots fill!
+        </div>
 
         <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-8">
           <h2 className="text-2xl font-semibold text-slate-950">What You Get</h2>
@@ -135,6 +140,7 @@ export default function BetaTesters() {
               href="https://twitter.com/s1mCH1"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => { if (typeof window !== 'undefined') { localStorage.setItem('aw_beta_click_twitter', String(Date.now())); } }}
               className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center transition hover:border-sky-300 hover:shadow-lg"
             >
               <span className="text-3xl">🐦</span>
@@ -144,6 +150,7 @@ export default function BetaTesters() {
 
             <a
               href="mailto:ceo@axiomlabs.systems?subject=AgentWatch Beta Tester"
+              onClick={() => { if (typeof window !== 'undefined') { localStorage.setItem('aw_beta_click_email', String(Date.now())); } }}
               className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center transition hover:border-sky-300 hover:shadow-lg"
             >
               <span className="text-3xl">📧</span>
@@ -155,6 +162,7 @@ export default function BetaTesters() {
               href="https://github.com/creatoronsocial/axiom-agentwatch"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => { if (typeof window !== 'undefined') { localStorage.setItem('aw_beta_click_github', String(Date.now())); } }}
               className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center transition hover:border-sky-300 hover:shadow-lg"
             >
               <span className="text-3xl">🐙</span>
