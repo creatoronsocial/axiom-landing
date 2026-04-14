@@ -72,43 +72,8 @@ export default function AgentWatch() {
 
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
-          Why AgentWatch?
+          API Reference
         </h2>
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white p-6">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white">
-              <span className="text-lg">⚡</span>
-            </div>
-            <h3 className="text-lg font-semibold text-slate-950">Live & Idempotent</h3>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Production pipeline with dedicated deduplication. Every ingestion stored exactly once —
-              no duplicates, no data loss.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-slate-200 bg-white p-6">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white">
-              <span className="text-lg">🔐</span>
-            </div>
-            <h3 className="text-lg font-semibold text-slate-950">Wallet-Ready for Agents</h3>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              CDP Server Wallet on Base Mainnet. USDC revenue collection pre-configured.
-              Agents start with wallet ready — no manual setup.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-slate-200 bg-white p-6">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white">
-              <span className="text-lg">📊</span>
-            </div>
-            <h3 className="text-lg font-semibold text-slate-950">Auditable History</h3>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Every ingestion logged in ingest_request_audit.
-              Full traceability from request to store.
-            </p>
-          </div>
-        </div>
-      </section>
 
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <div className="rounded-[2rem] border border-slate-200 bg-white p-8 sm:p-10">
@@ -230,8 +195,143 @@ export default function AgentWatch() {
 
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
-          API Reference
+          What You Get
         </h2>
+        
+        {/* Signal Examples */}
+        <div className="mb-12">
+          <h3 className="mb-4 text-lg font-semibold text-slate-950">Signal Examples</h3>
+          <div className="space-y-4">
+            <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+              <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
+                <p className="text-xs font-medium text-slate-600">GitHub: New Agent Repo</p>
+              </div>
+              <pre className="overflow-x-auto p-4 text-xs text-slate-800">
+                <code>{`{
+  "id": "evt_gh_8kF3nQ",
+  "source": "github",
+  "type": "repo_created",
+  "timestamp": "2026-04-14T10:30:00Z",
+  "agent": "devon-agent",
+  "data": {
+    "repo": "creatoronsocial/devon",
+    "url": "https://github.com/creatoronsocial/devon",
+    "stars": 142,
+    "description": "Autonomous coding agent for OpenClaw",
+    "keywords": ["agent", "autonomous", "coding"]
+  }
+}`}</code>
+              </pre>
+            </div>
+
+            <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+              <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
+                <p className="text-xs font-medium text-slate-600">Twitter/X: Agent Mention</p>
+              </div>
+              <pre className="overflow-x-auto p-4 text-xs text-slate-800">
+                <code>{`{
+  "id": "evt_tw_9mX2pL",
+  "source": "twitter",
+  "type": "mention",
+  "timestamp": "2026-04-14T11:15:00Z",
+  "agent": "openclaw",
+  "data": {
+    "tweet_id": "1234567890",
+    "author": "@builder_dev",
+    "text": "Just shipped my first agent with @openclaw - memory setup in 30 min!",
+    "likes": 47,
+    "retweets": 12,
+    "sentiment": "positive"
+  }
+}`}</code>
+              </pre>
+            </div>
+
+            <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+              <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
+                <p className="text-xs font-medium text-slate-600">Hacker News: Agent Discussion</p>
+              </div>
+              <pre className="overflow-x-auto p-4 text-xs text-slate-800">
+                <code>{`{
+  "id": "evt_hn_7vR4tY",
+  "source": "hackernews",
+  "type": "post",
+  "timestamp": "2026-04-14T09:00:00Z",
+  "agent": "ai-agent",
+  "data": {
+    "post_id": 39847562,
+    "title": "Show HN: I built an autonomous agent that deploys itself",
+    "url": "https://news.ycombinator.com/item?id=39847562",
+    "points": 234,
+    "comments": 67,
+    "keywords": ["autonomous", "agent", "deployment"]
+  }
+}`}</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+
+        {/* Use Cases */}
+        <div>
+          <h3 className="mb-4 text-lg font-semibold text-slate-950">What You Can Do</h3>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6">
+              <div className="mb-3 flex items-center gap-3">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600">📊</span>
+                <h4 className="font-semibold text-slate-950">Agent Monitoring</h4>
+              </div>
+              <p className="text-sm text-slate-600">
+                Track mentions, activity, and growth of your own AI agent projects across all platforms in one dashboard.
+              </p>
+              <p className="mt-3 text-xs font-medium text-slate-500">
+                Example: "Show me all mentions of 'devon-agent' this week"
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6">
+              <div className="mb-3 flex items-center gap-3">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100 text-blue-600">🔍</span>
+                <h4 className="font-semibold text-slate-950">Competitive Intelligence</h4>
+              </div>
+              <p className="text-sm text-slate-600">
+                Discover new agent projects, track competitor activity, and identify emerging patterns in the agent ecosystem.
+              </p>
+              <p className="mt-3 text-xs font-medium text-slate-500">
+                Example: "What new agent repos were created this month?"
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6">
+              <div className="mb-3 flex items-center gap-3">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-100 text-purple-600">🎯</span>
+                <h4 className="font-semibold text-slate-950">Lead Generation</h4>
+              </div>
+              <p className="text-sm text-slate-600">
+                Find builders creating AI agents → reach out with tools, services, or partnerships.
+              </p>
+              <p className="mt-3 text-xs font-medium text-slate-500">
+                Example: "Show me builders who shipped agents in the last 7 days"
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6">
+              <div className="mb-3 flex items-center gap-3">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-100 text-amber-600">📈</span>
+                <h4 className="font-semibold text-slate-950">Trend Detection</h4>
+              </div>
+              <p className="text-sm text-slate-600">
+                Spot emerging agent patterns, popular frameworks, and shifting community interest in real-time.
+              </p>
+              <p className="mt-3 text-xs font-medium text-slate-500">
+                Example: "Which agent frameworks are trending this month?"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <div className="space-y-4">
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
             <div className="border-b border-slate-200 bg-slate-50 px-6 py-4">
