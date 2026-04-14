@@ -5,8 +5,8 @@ const apiProducts = [
     price: 'Usage-based',
     description:
       'Live API for AI-agent signals. 100 requests/mo free, then $29/mo for 10k requests. Simple, transparent pricing.',
-    url: 'https://agentwatch.axiomlabs.systems',
-    cta: 'Get API Key',
+    url: '/agentwatch',
+    cta: 'Learn more',
     featured: true,
   },
 ];
@@ -242,10 +242,21 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-8 rounded-2xl border border-sky-200 bg-sky-50 p-6">
-          <p className="text-sm font-medium text-sky-900">
-            <strong>Status:</strong> Produktionsreife Ingestion abgeschlossen. Nächster Schritt: erste bezahlte Proof-Anfrage (approval-gated).
-          </p>
+        <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <Link
+            href="/agentwatch"
+            className="inline-flex items-center justify-center rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+          >
+            AgentWatch Details
+          </Link>
+          <a
+            href="https://agentwatch.axiomlabs.systems"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/80 px-6 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-950"
+          >
+            Try free tier
+          </a>
         </div>
       </section>
 
