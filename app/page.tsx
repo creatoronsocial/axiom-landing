@@ -2,11 +2,11 @@ const apiProducts = [
   {
     name: 'AgentWatch',
     kind: 'API',
-    price: 'Proof-backed preview',
+    price: 'Usage-based',
     description:
-      'Live, testable API for AI-agent signals. Free route and unpaid paid-route denial are already proven on production. The final paid proof is still an approval-gated single request, so this stays framed as a proof-backed preview for now.',
-    url: 'https://github.com/creatoronsocial/axiom-agentwatch',
-    cta: 'Review AgentWatch',
+      'Live API for AI-agent signals. 100 requests/mo free, then $29/mo for 10k requests. Simple, transparent pricing.',
+    url: 'https://agentwatch.axiomlabs.systems',
+    cta: 'Get API Key',
     featured: true,
   },
 ];
@@ -103,6 +103,9 @@ export default function Home() {
             </a>
             <a href="#agentwatch" className="transition hover:text-slate-950">
               AgentWatch
+            </a>
+            <a href="#pricing" className="transition hover:text-slate-950">
+              Pricing
             </a>
             <a href="#why" className="transition hover:text-slate-950">
               Why us
@@ -246,6 +249,146 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="pricing" className="relative mx-auto w-full max-w-7xl px-6 py-20 sm:px-8 lg:px-10">
+        <div className="mb-12">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Pricing</p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-slate-950 sm:text-4xl">
+            Simple, usage-based pricing.
+          </h2>
+          <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+            Start free, scale as you grow. No hidden fees, no surprises.
+          </p>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-3">
+          {/* Free Tier */}
+          <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-[0_18px_55px_rgba(15,23,42,0.05)]">
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-slate-950">Free</h3>
+              <p className="mt-2 text-sm text-slate-600">For testing and hobby projects</p>
+            </div>
+            <div className="mb-6">
+              <span className="text-4xl font-semibold text-slate-950">$0</span>
+              <span className="text-slate-600">/mo</span>
+            </div>
+            <ul className="space-y-3 text-sm text-slate-700">
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                100 requests/month
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                All routes access
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                Community support
+              </li>
+              <li className="flex items-center gap-3 text-slate-400">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-slate-100 text-slate-400">—</span>
+                No credit card required
+              </li>
+            </ul>
+            <a
+              href="https://axiomlabs.systems"
+              className="mt-8 inline-flex w-full items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-50"
+            >
+              Get started free
+            </a>
+          </div>
+
+          {/* Pro Tier */}
+          <div className="relative rounded-[1.75rem] border-2 border-sky-300 bg-[linear-gradient(180deg,#ffffff_0%,#f3f8ff_100%)] p-8 shadow-[0_24px_70px_rgba(59,130,246,0.15)]">
+            <div className="absolute -top-3 right-6 rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">
+              Most Popular
+            </div>
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-slate-950">Pro</h3>
+              <p className="mt-2 text-sm text-slate-600">For production agents</p>
+            </div>
+            <div className="mb-6">
+              <span className="text-4xl font-semibold text-slate-950">$29</span>
+              <span className="text-slate-600">/mo</span>
+            </div>
+            <ul className="space-y-3 text-sm text-slate-700">
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                10,000 requests/month
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                60 requests/minute
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                Priority email support
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                Usage dashboard + alerts
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                $0.005/request overage
+              </li>
+            </ul>
+            <a
+              href="https://axiomlabs.systems"
+              className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-4 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+            >
+              Start Pro trial
+            </a>
+          </div>
+
+          {/* Scale Tier */}
+          <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-[0_18px_55px_rgba(15,23,42,0.05)]">
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-slate-950">Scale</h3>
+              <p className="mt-2 text-sm text-slate-600">For high-volume usage</p>
+            </div>
+            <div className="mb-6">
+              <span className="text-4xl font-semibold text-slate-950">$199</span>
+              <span className="text-slate-600">/mo</span>
+            </div>
+            <ul className="space-y-3 text-sm text-slate-700">
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                100,000 requests/month
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                300 requests/minute
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                Priority + Slack support
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                Custom rate limits
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
+                $0.003/request overage
+              </li>
+            </ul>
+            <a
+              href="https://axiomlabs.systems"
+              className="mt-8 inline-flex w-full items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-50"
+            >
+              Contact sales
+            </a>
+          </div>
+        </div>
+
+        {/* Enterprise CTA */}
+        <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6 text-center">
+          <p className="text-sm font-medium text-slate-900">
+            Need unlimited requests or dedicated support? <a href="mailto:ceo@axiomlabs.systems" className="text-sky-700 underline hover:text-sky-800">Contact us for Enterprise</a>
+          </p>
+        </div>
+      </section>
+
       <section id="products" className="relative mx-auto w-full max-w-7xl px-6 py-22 sm:px-8 lg:px-10">
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
@@ -328,6 +471,9 @@ export default function Home() {
             </a>
             <a href="https://twitter.com/axiomlabs" target="_blank" rel="noopener noreferrer" className="transition hover:text-slate-950">
               Twitter
+            </a>
+            <a href="https://github.com/creatoronsocial/axiom-agentwatch" target="_blank" rel="noopener noreferrer" className="transition hover:text-slate-950">
+              GitHub
             </a>
           </div>
         </div>
