@@ -21,7 +21,7 @@ export default function AgentWatch() {
               Production ready
             </div>
 
-            <h1 className="text-4xl font-semibold tracking-[-0.05em] text-slate-950 sm:text-5xl">
+            <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
               AgentWatch API
             </h1>
             <p className="mt-6 text-lg leading-8 text-slate-600">
@@ -74,7 +74,7 @@ export default function AgentWatch() {
 
       {/* Features */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
-        <h2 className="mb-8 text-2xl font-semibold tracking-[-0.04em] text-slate-950">
+        <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
           Why AgentWatch?
         </h2>
         <div className="grid gap-6 md:grid-cols-3">
@@ -116,7 +116,7 @@ export default function AgentWatch() {
       {/* Wallet Setup */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <div className="rounded-[2rem] border border-slate-200 bg-white p-8 sm:p-10">
-          <h2 className="text-2xl font-semibold tracking-[-0.04em] text-slate-950">
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
             Wallet Setup for AI Agents
           </h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
@@ -250,7 +250,7 @@ Decimals: 6`}</code>
 
       {/* API Routes */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
-        <h2 className="mb-8 text-2xl font-semibold tracking-[-0.04em] text-slate-950">
+        <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
           API Reference
         </h2>
         <div className="space-y-4">
@@ -315,7 +315,7 @@ Decimals: 6`}</code>
       {/* CTA */}
       <section className="mx-auto w-full max-w-7xl px-6 pb-20 sm:px-8 lg:px-10">
         <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10 text-center">
-          <h2 className="text-2xl font-semibold tracking-[-0.04em] text-slate-950">
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
             Ready to try AgentWatch?
           </h2>
           <p className="mt-4 text-lg text-slate-600">
