@@ -3,6 +3,7 @@ import Link from 'next/link';
 export default function AgentWatch() {
   return (
     <main className="relative min-h-screen bg-[var(--background)] text-[var(--foreground)]">
+      {/* Hero Section */}
       <section className="relative mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <div className="mb-12">
           <Link
@@ -70,129 +71,7 @@ export default function AgentWatch() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
-        <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
-          API Reference
-        </h2>
-
-      <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 sm:p-10">
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-            Wallet Setup for AI Agents
-          </h2>
-          <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-            AgentWatch accepts USDC on Base Mainnet via x402. For AI agents, we recommend
-            the CDP Server Wallet for automated, non-custodial payments.
-          </p>
-
-          <div className="mt-8 grid gap-8 lg:grid-cols-2">
-            <div>
-              <h3 className="mb-4 text-lg font-semibold text-slate-950">
-                Option 1: CDP Server Wallet (Recommended for Agents)
-              </h3>
-              <ol className="space-y-4 text-sm text-slate-700">
-                <li className="flex gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">1</span>
-                  <div>
-                    <p className="font-medium">Install CDP SDK</p>
-                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
-                      <code>npm install @coinbase/coinbase-sdk</code>
-                    </pre>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">2</span>
-                  <div>
-                    <p className="font-medium">Create Server Wallet</p>
-                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
-                      <code>{`import { Wallet } from '@coinbase/coinbase-sdk';\n\nconst wallet = await Wallet.create({\n  networkId: 'base-mainnet'\n});`}</code>
-                    </pre>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">3</span>
-                  <div>
-                    <p className="font-medium">Fund with USDC</p>
-                    <p className="mt-1 text-slate-600">
-                      Bridge USDC to Base via{' '}
-                      <a href="https://coinbase.com/bridge" className="text-sky-700 underline">Coinbase Bridge</a>{' '}
-                      or{' '}
-                      <a href="https://bungee.exchange" className="text-sky-700 underline">Bungee</a>.
-                    </p>
-                    <p className="mt-2 text-slate-600">
-                      Revenue wallet: <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">0x45A5...6D46</code>
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">4</span>
-                  <div>
-                    <p className="font-medium">Make x402 Payment</p>
-                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
-                      <code>{`const payment = await wallet.createTransfer({\n  amount: "0.01",\n  tokenId: "usdc",\n  destination: "0x45A5254593a1a327B5644b498D22228b40EC6D46"\n});`}</code>
-                    </pre>
-                  </div>
-                </li>
-              </ol>
-            </div>
-
-            <div>
-              <h3 className="mb-4 text-lg font-semibold text-slate-950">
-                Option 2: Standard Wallet (MetaMask, Coinbase Wallet)
-              </h3>
-              <ol className="space-y-4 text-sm text-slate-700">
-                <li className="flex gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">1</span>
-                  <div>
-                    <p className="font-medium">Add Base Mainnet to Wallet</p>
-                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
-                      <code>{`Network: Base Mainnet\nChain ID: 8453\nRPC: https://mainnet.base.org\nCurrency: ETH`}</code>
-                    </pre>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">2</span>
-                  <div>
-                    <p className="font-medium">Add USDC Token</p>
-                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
-                      <code>{`Contract: 0x833589fCD6eDb6E08f4c7C32D4f71d54bdA488d6\nSymbol: USDC\nDecimals: 6`}</code>
-                    </pre>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">3</span>
-                  <div>
-                    <p className="font-medium">Get USDC on Base</p>
-                    <ul className="mt-1 list-disc pl-5 text-slate-600">
-                      <li>Buy on Coinbase, send to Base</li>
-                      <li>Bridge from Ethereum via official bridge</li>
-                      <li>Use DEX aggregator (Bungee, Li.Fi)</li>
-                    </ul>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">4</span>
-                  <div>
-                    <p className="font-medium">Pay via x402</p>
-                    <p className="mt-1 text-slate-600">
-                      When you hit a paid endpoint, the 402 response includes
-                      payment requirements. Sign and submit to unlock access.
-                    </p>
-                  </div>
-                </li>
-              </ol>
-            </div>
-          </div>
-
-          <div className="mt-8 rounded-xl border border-sky-200 bg-sky-50 p-6">
-            <p className="text-sm font-medium text-sky-900">
-              <strong>Tip:</strong> For production AI agents, use CDP Server Wallet with API key auth.
-              For testing or one-off payments, use x402 with any Base-compatible wallet.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      {/* What You Get Section */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
           What You Get
@@ -331,7 +210,130 @@ export default function AgentWatch() {
         </div>
       </section>
 
+      {/* Wallet Setup Section */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
+        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 sm:p-10">
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+            Wallet Setup for AI Agents
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
+            AgentWatch accepts USDC on Base Mainnet via x402. For AI agents, we recommend
+            the CDP Server Wallet for automated, non-custodial payments.
+          </p>
+
+          <div className="mt-8 grid gap-8 lg:grid-cols-2">
+            <div>
+              <h3 className="mb-4 text-lg font-semibold text-slate-950">
+                Option 1: CDP Server Wallet (Recommended for Agents)
+              </h3>
+              <ol className="space-y-4 text-sm text-slate-700">
+                <li className="flex gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">1</span>
+                  <div>
+                    <p className="font-medium">Install CDP SDK</p>
+                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+                      <code>npm install @coinbase/coinbase-sdk</code>
+                    </pre>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">2</span>
+                  <div>
+                    <p className="font-medium">Create Server Wallet</p>
+                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+                      <code>{`import { Wallet } from '@coinbase/coinbase-sdk';\n\nconst wallet = await Wallet.create({\n  networkId: 'base-mainnet'\n});`}</code>
+                    </pre>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">3</span>
+                  <div>
+                    <p className="font-medium">Fund with USDC</p>
+                    <p className="mt-1 text-slate-600">
+                      Bridge USDC to Base via{' '}
+                      <a href="https://coinbase.com/bridge" className="text-sky-700 underline">Coinbase Bridge</a>{' '}
+                      or{' '}
+                      <a href="https://bungee.exchange" className="text-sky-700 underline">Bungee</a>.
+                    </p>
+                    <p className="mt-2 text-slate-600">
+                      Revenue wallet: <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">0x45A5...6D46</code>
+                    </p>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">4</span>
+                  <div>
+                    <p className="font-medium">Make x402 Payment</p>
+                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+                      <code>{`const payment = await wallet.createTransfer({\n  amount: "0.01",\n  tokenId: "usdc",\n  destination: "0x45A5254593a1a327B5644b498D22228b40EC6D46"\n});`}</code>
+                    </pre>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div>
+              <h3 className="mb-4 text-lg font-semibold text-slate-950">
+                Option 2: Standard Wallet (MetaMask, Coinbase Wallet)
+              </h3>
+              <ol className="space-y-4 text-sm text-slate-700">
+                <li className="flex gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">1</span>
+                  <div>
+                    <p className="font-medium">Add Base Mainnet to Wallet</p>
+                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+                      <code>{`Network: Base Mainnet\nChain ID: 8453\nRPC: https://mainnet.base.org\nCurrency: ETH`}</code>
+                    </pre>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">2</span>
+                  <div>
+                    <p className="font-medium">Add USDC Token</p>
+                    <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+                      <code>{`Contract: 0x833589fCD6eDb6E08f4c7C32D4f71d54bdA488d6\nSymbol: USDC\nDecimals: 6`}</code>
+                    </pre>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">3</span>
+                  <div>
+                    <p className="font-medium">Get USDC on Base</p>
+                    <ul className="mt-1 list-disc pl-5 text-slate-600">
+                      <li>Buy on Coinbase, send to Base</li>
+                      <li>Bridge from Ethereum via official bridge</li>
+                      <li>Use DEX aggregator (Bungee, Li.Fi)</li>
+                    </ul>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">4</span>
+                  <div>
+                    <p className="font-medium">Pay via x402</p>
+                    <p className="mt-1 text-slate-600">
+                      When you hit a paid endpoint, the 402 response includes
+                      payment requirements. Sign and submit to unlock access.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div className="mt-8 rounded-xl border border-sky-200 bg-sky-50 p-6">
+            <p className="text-sm font-medium text-sky-900">
+              <strong>Tip:</strong> For production AI agents, use CDP Server Wallet with API key auth.
+              For testing or one-off payments, use x402 with any Base-compatible wallet.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* API Reference Section */}
+      <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
+        <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
+          API Reference
+        </h2>
         <div className="space-y-4">
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
             <div className="border-b border-slate-200 bg-slate-50 px-6 py-4">
@@ -387,6 +389,7 @@ export default function AgentWatch() {
         </div>
       </section>
 
+      {/* CTA Section */}
       <section className="mx-auto w-full max-w-7xl px-6 pb-20 sm:px-8 lg:px-10">
         <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10 text-center">
           <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
@@ -414,6 +417,7 @@ export default function AgentWatch() {
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="border-t border-slate-200/80 bg-white/90">
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-10">
           <p>© 2026 Axiom Labs. All rights reserved.</p>
