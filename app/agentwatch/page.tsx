@@ -77,77 +77,51 @@ export default function AgentWatch() {
           What You Get
         </h2>
         
-        {/* Signal Examples */}
-        <div className="mb-12">
-          <h3 className="mb-4 text-lg font-semibold text-slate-950">Signal Examples</h3>
-          <div className="space-y-4">
-            <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
-              <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
-                <p className="text-xs font-medium text-slate-600">GitHub: New Agent Repo</p>
-              </div>
-              <pre className="overflow-x-auto p-4 text-xs text-slate-800">
-                <code>{`{
-  "id": "evt_gh_8kF3nQ",
-  "source": "github",
-  "type": "repo_created",
-  "timestamp": "2026-04-14T10:30:00Z",
-  "agent": "devon-agent",
-  "data": {
-    "repo": "creatoronsocial/devon",
-    "url": "https://github.com/creatoronsocial/devon",
-    "stars": 142,
-    "description": "Autonomous coding agent for OpenClaw",
-    "keywords": ["agent", "autonomous", "coding"]
-  }
-}`}</code>
-              </pre>
+        {/* Signal Descriptions */}
+        <div className="mb-12 space-y-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6">
+            <div className="mb-3 flex items-center gap-3">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-950 text-white">🐙</span>
+              <h3 className="text-lg font-semibold text-slate-950">GitHub Signals</h3>
             </div>
+            <p className="text-sm text-slate-600">
+              Get notified when new AI-agent repositories are created, when code is pushed, or when discussions happen in issues and PRs. 
+              Each signal includes the repo name, description, star count, commit activity, and relevant keywords — so you can track 
+              competitor launches, find builders to partner with, or monitor your own agent's traction.
+            </p>
+            <pre className="mt-4 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+              <code>{`{"source": "github", "type": "repo_created", "agent": "devon-agent", "repo": "creatoronsocial/devon", "stars": 142, "keywords": ["agent", "autonomous"]}`}</code>
+            </pre>
+          </div>
 
-            <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
-              <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
-                <p className="text-xs font-medium text-slate-600">Twitter/X: Agent Mention</p>
-              </div>
-              <pre className="overflow-x-auto p-4 text-xs text-slate-800">
-                <code>{`{
-  "id": "evt_tw_9mX2pL",
-  "source": "twitter",
-  "type": "mention",
-  "timestamp": "2026-04-14T11:15:00Z",
-  "agent": "openclaw",
-  "data": {
-    "tweet_id": "1234567890",
-    "author": "@builder_dev",
-    "text": "Just shipped my first agent with @openclaw - memory setup in 30 min!",
-    "likes": 47,
-    "retweets": 12,
-    "sentiment": "positive"
-  }
-}`}</code>
-              </pre>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6">
+            <div className="mb-3 flex items-center gap-3">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-sky-500 text-white">𝕏</span>
+              <h3 className="text-lg font-semibold text-slate-950">Twitter / X Mentions</h3>
             </div>
+            <p className="text-sm text-slate-600">
+              Capture every mention of your agent (or keywords like "AI agent", "autonomous") with full context: 
+              who posted it, engagement metrics (likes, retweets), sentiment analysis, and the actual tweet text. 
+              Use this to find early adopters, respond to feedback, or track sentiment around your brand.
+            </p>
+            <pre className="mt-4 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+              <code>{`{"source": "twitter", "type": "mention", "agent": "openclaw", "author": "@builder_dev", "text": "Just shipped with @openclaw!", "likes": 47, "sentiment": "positive"}`}</code>
+            </pre>
+          </div>
 
-            <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
-              <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
-                <p className="text-xs font-medium text-slate-600">Hacker News: Agent Discussion</p>
-              </div>
-              <pre className="overflow-x-auto p-4 text-xs text-slate-800">
-                <code>{`{
-  "id": "evt_hn_7vR4tY",
-  "source": "hackernews",
-  "type": "post",
-  "timestamp": "2026-04-14T09:00:00Z",
-  "agent": "ai-agent",
-  "data": {
-    "post_id": 39847562,
-    "title": "Show HN: I built an autonomous agent that deploys itself",
-    "url": "https://news.ycombinator.com/item?id=39847562",
-    "points": 234,
-    "comments": 67,
-    "keywords": ["autonomous", "agent", "deployment"]
-  }
-}`}</code>
-              </pre>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6">
+            <div className="mb-3 flex items-center gap-3">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-orange-500 text-white">📰</span>
+              <h3 className="text-lg font-semibold text-slate-950">Hacker News Discussions</h3>
             </div>
+            <p className="text-sm text-slate-600">
+              Track when AI-agent projects hit Hacker News frontpage. Each signal includes the post title, 
+              URL, score, comment count, and keywords. Perfect for spotting trending projects, understanding 
+              what resonates with the community, or timing your own launch.
+            </p>
+            <pre className="mt-4 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-800">
+              <code>{`{"source": "hackernews", "type": "post", "agent": "ai-agent", "title": "Show HN: Autonomous agent", "points": 234, "comments": 67}`}</code>
+            </pre>
           </div>
         </div>
 
