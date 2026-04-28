@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Axiom Labs — OpenClaw Products",
-  description: "Battle-tested skill packs for OpenClaw agents. From Paperclip task management to overnight automation.",
+  title: "Axiom Labs — OpenClaw Operator Products",
+  description:
+    "OpenClaw operator tooling from Axiom Labs, including live Claw Mart products: Memory & Recall Pack, Agent Onboarding Kit, Multi-Agent Coordination Pack, Testing & Quality Gates Pack, Client Switching Pack, and Task Intake & Scoping Pack.",
 };
 
 export default function RootLayout({

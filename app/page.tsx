@@ -4,9 +4,9 @@ const apiProducts = [
   {
     name: 'AgentWatch',
     kind: 'API',
-    price: 'Usage-based',
+    price: 'Recovery-gated beta',
     description:
-      'Live API for AI-agent signals. 100 requests/mo free, then $29/mo for 10k requests. Simple, transparent pricing.',
+      'One real x402 paid proof exists already. Broader onboarding resumes after redeploy + verification, with the next wave kept intentionally small.',
     url: '/agentwatch',
     cta: 'Learn more',
     featured: true,
@@ -15,12 +15,22 @@ const apiProducts = [
 
 const skillProducts = [
   {
+    name: 'Memory & Recall Pack',
+    kind: 'Skill pack',
+    price: '$19',
+    description:
+      'Markdown-first memory hygiene for OpenClaw agents. Faster restarts, better recall, less context drag between sessions.',
+    url: 'https://www.shopclawmart.com/listings/memory-recall-pack-ae4e2332',
+    cta: 'Buy on Claw Mart',
+  },
+  {
     name: 'Agent Onboarding Kit',
     kind: 'Skill pack',
-    price: '$9',
+    price: '$19',
     description:
-      'New OpenClaw agents productive in 4 hours. Memory setup, Paperclip integration, task queues, pre-configured for your workspace.',
-    url: 'https://shopclawmart.com/best/productivity-skills',
+      'Get your agents up and running in 30 minutes instead of 3 days. Memory setup, Paperclip integration, task queues, pre-configured for your workspace.',
+    url: 'https://www.shopclawmart.com/listings/agent-onboarding-kit-new-agents-in-4-hours-24b1b32c',
+    cta: 'Buy on Claw Mart',
   },
   {
     name: 'Paperclip Starter Kit',
@@ -53,6 +63,42 @@ const skillProducts = [
     description:
       'Reduce OpenClaw interruptions by 75%+. A three-tier decision system for act, report, and ask.',
     url: 'https://shopclawmart.com/best/productivity-skills',
+  },
+  {
+    name: 'Testing & Quality Gates Pack',
+    kind: 'Skill pack',
+    price: '$19',
+    description:
+      'Zero broken commits from agents. Enforces lint → test → review quality gates before any agent change lands.',
+    url: 'https://www.shopclawmart.com/listings/testing-quality-gates-pack-zero-broken-commits-from-agents-d7429f27',
+    cta: 'Buy on Claw Mart',
+  },
+  {
+    name: 'Multi-Agent Coordination Pack',
+    kind: 'Skill pack',
+    price: '$29',
+    description:
+      'Run 2+ OpenClaw agents without chaos. Adds roles, handoffs, locks, and escalation rules for shared workspaces.',
+    url: 'https://www.shopclawmart.com/listings/multi-agent-coordination-pack-run-2-openclaw-agents-without-chaos-5f8849b1',
+    cta: 'Buy on Claw Mart',
+  },
+  {
+    name: 'Client Switching Pack',
+    kind: 'Skill pack',
+    price: '$19',
+    description:
+      'Switch client context cleanly without dragging stale assumptions across accounts. Gives operators a repeatable reset between agency-mode engagements.',
+    url: 'https://www.shopclawmart.com/listings/client-switching-pack-agency-mode-67d76e58',
+    cta: 'Buy on Claw Mart',
+  },
+  {
+    name: 'Task Intake & Scoping Pack',
+    kind: 'Skill pack',
+    price: '$19',
+    description:
+      'Stop agents from wasting time on ambiguous tasks. Clean intake forms, clarity scoring, and before/after examples that turn fuzzy requests into executable work.',
+    url: 'https://www.shopclawmart.com/listings/task-intake-scoping-pack-1af96426',
+    cta: 'Buy on Claw Mart',
   },
 ];
 
@@ -107,7 +153,7 @@ export default function Home() {
               AgentWatch
             </a>
             <a href="#pricing" className="transition hover:text-slate-950">
-              Pricing
+              Status
             </a>
             <a href="#why" className="transition hover:text-slate-950">
               Why us
@@ -202,11 +248,10 @@ export default function Home() {
         <div className="mb-10">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">AgentWatch</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-slate-950 sm:text-4xl">
-            Live API für AI-Agent-Signale.
+            Recovery-gated beta for AI-agent signals.
           </h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-            AgentWatch liefert verifizierte Signale von AI-Agenten-Aktivitäten – direkt aus GitHub, Social und anderen Quellen. 
-            Produktionsreife Pipeline mit idempotenter Ingestion, deduplizierter Speicherung und auditierbarem Verlauf.
+            AgentWatch tracks AI-agent activity across GitHub, X, and other sources. One real x402 paid proof exists already, but broader onboarding resumes only after the current redeploy + verification pass is green.
           </p>
         </div>
 
@@ -215,9 +260,9 @@ export default function Home() {
             <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white">
               <span className="text-lg">⚡</span>
             </div>
-            <h3 className="text-lg font-semibold text-slate-950">Live & Idempotent</h3>
+            <h3 className="text-lg font-semibold text-slate-950">Recovery gate still active</h3>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              Produktions-Pipeline mit dedizierter Deduplizierung. Jede Ingestion wird exakt einmal gespeichert – keine Duplikate, kein Datenverlust.
+              An authenticated Vercel redeploy and live verification still need to clear before broader production access is described as open.
             </p>
           </div>
 
@@ -225,10 +270,9 @@ export default function Home() {
             <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white">
               <span className="text-lg">🔐</span>
             </div>
-            <h3 className="text-lg font-semibold text-slate-950">Wallet-Setup für Agenten</h3>
+            <h3 className="text-lg font-semibold text-slate-950">Paid boundary already proven</h3>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              CDP Server Wallet auf Base Mainnet. USDC-Revenue-Collection in <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">0x45A5...6D46</code>. 
-              Agenten starten mit vorkonfigurierter Wallet – keine manuelle Einrichtung.
+              One real x402 paid proof exists already. That proves the paid path without pretending broad self-serve onboarding is open yet.
             </p>
           </div>
 
@@ -236,10 +280,9 @@ export default function Home() {
             <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white">
               <span className="text-lg">📊</span>
             </div>
-            <h3 className="text-lg font-semibold text-slate-950">Auditierbarer Verlauf</h3>
+            <h3 className="text-lg font-semibold text-slate-950">Next wave stays small</h3>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              Jede Ingestion wird in <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">ingest_request_audit</code> protokolliert. 
-              Vollständige Nachverfolgbarkeit von Request bis Store.
+              Broader onboarding follows redeploy + verification, then reopens deliberately in a small builder wave instead of broad self-serve.
             </p>
           </div>
         </div>
@@ -257,147 +300,122 @@ export default function Home() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/80 px-6 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:text-slate-950"
           >
-            Try free tier
+            View current API surface
           </a>
         </div>
       </section>
 
       <section id="pricing" className="relative mx-auto w-full max-w-7xl px-6 py-20 sm:px-8 lg:px-10">
         <div className="mb-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Pricing</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Recovery Window</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-slate-950 sm:text-4xl">
-            Simple, usage-based pricing.
+            Truthful status before broader rollout.
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
-            Start free, scale as you grow. No hidden fees, no surprises.
+            Self-serve onboarding and broad pricing claims stay paused until the redeploy + verification gate is green.
           </p>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
-          {/* Free Tier */}
           <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-[0_18px_55px_rgba(15,23,42,0.05)]">
             <div className="mb-4">
-              <h3 className="text-xl font-semibold text-slate-950">Free</h3>
-              <p className="mt-2 text-sm text-slate-600">For testing and hobby projects</p>
+              <h3 className="text-xl font-semibold text-slate-950">Public self-serve</h3>
+              <p className="mt-2 text-sm text-slate-600">Paused during the recovery gate</p>
             </div>
             <div className="mb-6">
-              <span className="text-4xl font-semibold text-slate-950">$0</span>
-              <span className="text-slate-600">/mo</span>
+              <span className="text-4xl font-semibold text-slate-950">Paused</span>
             </div>
             <ul className="space-y-3 text-sm text-slate-700">
               <li className="flex items-center gap-3">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                100 requests/month
+                Authenticated Vercel redeploy still required
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                All routes access
+                Post-deploy verification must pass cleanly
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                Community support
-              </li>
-              <li className="flex items-center gap-3 text-slate-400">
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-slate-100 text-slate-400">—</span>
-                No credit card required
+                `AGENTWATCH_SELF_SERVE_BETA_OPEN` stays false by default
               </li>
             </ul>
-            <a
-              href="https://axiomlabs.systems"
+            <Link
+              href="/agentwatch"
               className="mt-8 inline-flex w-full items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-50"
             >
-              Get started free
-            </a>
+              Review current status
+            </Link>
           </div>
 
-          {/* Pro Tier */}
           <div className="relative rounded-[1.75rem] border-2 border-sky-300 bg-[linear-gradient(180deg,#ffffff_0%,#f3f8ff_100%)] p-8 shadow-[0_24px_70px_rgba(59,130,246,0.15)]">
             <div className="absolute -top-3 right-6 rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">
-              Most Popular
+              Already real
             </div>
             <div className="mb-4">
-              <h3 className="text-xl font-semibold text-slate-950">Pro</h3>
-              <p className="mt-2 text-sm text-slate-600">For production agents</p>
+              <h3 className="text-xl font-semibold text-slate-950">Paid path proof</h3>
+              <p className="mt-2 text-sm text-slate-600">Truth that is already established</p>
             </div>
             <div className="mb-6">
-              <span className="text-4xl font-semibold text-slate-950">$29</span>
-              <span className="text-slate-600">/mo</span>
+              <span className="text-4xl font-semibold text-slate-950">1 real</span>
+              <span className="text-slate-600"> x402 run</span>
             </div>
             <ul className="space-y-3 text-sm text-slate-700">
               <li className="flex items-center gap-3">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                10,000 requests/month
+                Production paid proof artifact already exists
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                60 requests/minute
+                Real buyer evidence for the paid boundary
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                Priority email support
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                Usage dashboard + alerts
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                $0.005/request overage
+                Supports launch narrative without reopening self-serve
               </li>
             </ul>
-            <a
-              href="https://axiomlabs.systems"
+            <Link
+              href="/agentwatch"
               className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-4 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
             >
-              Start Pro trial
-            </a>
+              View AgentWatch details
+            </Link>
           </div>
 
-          {/* Scale Tier */}
           <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-[0_18px_55px_rgba(15,23,42,0.05)]">
             <div className="mb-4">
-              <h3 className="text-xl font-semibold text-slate-950">Scale</h3>
-              <p className="mt-2 text-sm text-slate-600">For high-volume usage</p>
+              <h3 className="text-xl font-semibold text-slate-950">Broader onboarding</h3>
+              <p className="mt-2 text-sm text-slate-600">What happens after the gate clears</p>
             </div>
             <div className="mb-6">
-              <span className="text-4xl font-semibold text-slate-950">$199</span>
-              <span className="text-slate-600">/mo</span>
+              <span className="text-4xl font-semibold text-slate-950">After</span>
+              <span className="text-slate-600"> verification</span>
             </div>
             <ul className="space-y-3 text-sm text-slate-700">
               <li className="flex items-center gap-3">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                100,000 requests/month
+                Reopens only after redeploy + verification pass
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                300 requests/minute
+                The next builder wave stays intentionally small
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                Priority + Slack support
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                Custom rate limits
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-                $0.003/request overage
+                Pricing and access copy updates after recovery is green
               </li>
             </ul>
             <a
-              href="https://axiomlabs.systems"
+              href="mailto:ceo@axiomlabs.systems"
               className="mt-8 inline-flex w-full items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-800 transition hover:border-slate-300 hover:bg-slate-50"
             >
-              Contact sales
+              Join the next wave
             </a>
           </div>
         </div>
 
-        {/* Enterprise CTA */}
         <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6 text-center">
           <p className="text-sm font-medium text-slate-900">
-            Need unlimited requests or dedicated support? <a href="mailto:ceo@axiomlabs.systems" className="text-sky-700 underline hover:text-sky-800">Contact us for Enterprise</a>
+            Need to be in the first post-recovery builder wave? <a href="mailto:ceo@axiomlabs.systems" className="text-sky-700 underline hover:text-sky-800">Email Axiom Labs</a> and mention AgentWatch.
           </p>
         </div>
       </section>
@@ -411,7 +429,7 @@ export default function Home() {
             </h2>
           </div>
           <p className="max-w-xl text-sm leading-7 text-slate-500 sm:text-base">
-            AgentWatch is the API product. The rest are compact OpenClaw skill packs. Separating them keeps the offer simpler to understand.
+            AgentWatch is the API product. Three live Claw Mart listings sit alongside early-access packs, keeping the shelf simple while still reflecting what is already real.
           </p>
         </div>
 
@@ -421,7 +439,7 @@ export default function Home() {
               <span className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">
                 API
               </span>
-              <p className="text-sm text-slate-500">A live product surface with a free route and paid current-day access.</p>
+              <p className="text-sm text-slate-500">Recovery-gated API with one real x402 paid proof and a deliberately small next onboarding wave.</p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {apiProducts.map((product) => (
