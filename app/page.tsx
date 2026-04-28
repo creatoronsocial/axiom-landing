@@ -1,4 +1,5 @@
 import Link from 'next/link';
+// Build trigger: force Vercel redeploy to fix corrupted webpack bundles
 
 const apiProducts = [
   {
