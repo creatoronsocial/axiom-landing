@@ -18,15 +18,16 @@ export default function AgentWatch() {
           <div>
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-sky-100 bg-white/80 px-4 py-2 text-sm text-slate-600 shadow-[0_12px_30px_rgba(15,23,42,0.05)] backdrop-blur">
               <span className="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500 shadow-[0_0_0_6px_rgba(34,197,94,0.12)]" />
-              Production ready
+              Recovery-gated beta
             </div>
 
             <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
               AgentWatch API
             </h1>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Live, verified signals from AI-agent activity. GitHub pushes, social mentions,
-              and more — delivered via a simple REST API with usage-based pricing.
+              AgentWatch is an API for AI-agent activity signals across GitHub pushes, social mentions,
+              and more. One real x402 paid production proof already exists, but broader onboarding resumes
+              only after the current redeploy + verification pass, and the next wave stays intentionally small.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -36,7 +37,7 @@ export default function AgentWatch() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
               >
-                Try free tier
+                View current API surface
               </a>
               <a
                 href="https://github.com/creatoronsocial/axiom-agentwatch"
@@ -50,10 +51,10 @@ export default function AgentWatch() {
           </div>
 
           <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
-            <h3 className="text-lg font-semibold text-slate-950">Quickstart</h3>
+            <h3 className="text-lg font-semibold text-slate-950">Current API Surface</h3>
             <div className="mt-4 overflow-hidden rounded-xl border border-slate-200 bg-white">
               <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
-                <p className="text-xs font-medium text-slate-600">Free Request (no auth)</p>
+                <p className="text-xs font-medium text-slate-600">Reference public route</p>
               </div>
               <pre className="overflow-x-auto p-4 text-sm text-slate-800">
                 <code>{`curl https://agentwatch.axiomlabs.systems/agent-watch/yesterday`}</code>
@@ -61,10 +62,10 @@ export default function AgentWatch() {
             </div>
             <div className="mt-4 overflow-hidden rounded-xl border border-slate-200 bg-white">
               <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
-                <p className="text-xs font-medium text-slate-600">Today (requires API key)</p>
+                <p className="text-xs font-medium text-slate-600">Paid-boundary check (x402)</p>
               </div>
               <pre className="overflow-x-auto p-4 text-sm text-slate-800">
-                <code>{`curl https://agentwatch.axiomlabs.systems/agent-watch/today \\\n  -H "Authorization: Bearer aw_live_xxx"`}</code>
+                <code>{`curl --silent -i "https://agentwatch.axiomlabs.systems/agent-watch/today"`}</code>
               </pre>
             </div>
           </div>
@@ -293,8 +294,8 @@ export default function AgentWatch() {
 
           <div className="mt-8 rounded-xl border border-sky-200 bg-sky-50 p-6">
             <p className="text-sm font-medium text-sky-900">
-              <strong>Tip:</strong> For production AI agents, use CDP Server Wallet with API key auth.
-              For testing or one-off payments, use x402 with any Base-compatible wallet.
+              <strong>Tip:</strong> For the paid production proof path, use CDP Server Wallet for x402 payments once onboarding resumes.
+              For one-off verification, use x402 with any Base-compatible wallet.
             </p>
           </div>
         </div>
@@ -303,7 +304,7 @@ export default function AgentWatch() {
       {/* API Reference Section */}
       <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
         <h2 className="mb-8 text-2xl font-semibold tracking-tight text-slate-950">
-          API Reference
+          Current API Surface
         </h2>
         <div className="space-y-4">
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
@@ -311,11 +312,11 @@ export default function AgentWatch() {
               <div className="flex items-center gap-3">
                 <span className="rounded-md bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-700">GET</span>
                 <code className="text-sm text-slate-800">/agent-watch/yesterday</code>
-                <span className="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600">Free</span>
+                <span className="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600">Public route</span>
               </div>
             </div>
             <div className="p-6">
-              <p className="text-sm text-slate-600">Get aggregated signals from yesterday. No authentication required.</p>
+              <p className="text-sm text-slate-600">Reference public route for yesterday&apos;s aggregated signals. Treat current availability as recovery-gated until the redeploy + verification pass is clear.</p>
             </div>
           </div>
 
@@ -324,11 +325,11 @@ export default function AgentWatch() {
               <div className="flex items-center gap-3">
                 <span className="rounded-md bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-700">GET</span>
                 <code className="text-sm text-slate-800">/agent-watch/today</code>
-                <span className="rounded-md bg-amber-100 px-2 py-1 text-xs font-semibold text-amber-700">API Key</span>
+                <span className="rounded-md bg-amber-100 px-2 py-1 text-xs font-semibold text-amber-700">x402 paid</span>
               </div>
             </div>
             <div className="p-6">
-              <p className="text-sm text-slate-600">Get today's live signals. Requires API key or x402 payment.</p>
+              <p className="text-sm text-slate-600">Paid-route surface for today&apos;s signals. Expect the 402 boundary first, then retry with x-payment-token after the recovery gate clears.</p>
             </div>
           </div>
 
@@ -337,11 +338,11 @@ export default function AgentWatch() {
               <div className="flex items-center gap-3">
                 <span className="rounded-md bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-700">GET</span>
                 <code className="text-sm text-slate-800">/agent-watch/archive</code>
-                <span className="rounded-md bg-amber-100 px-2 py-1 text-xs font-semibold text-amber-700">API Key</span>
+                <span className="rounded-md bg-amber-100 px-2 py-1 text-xs font-semibold text-amber-700">x402 paid</span>
               </div>
             </div>
             <div className="p-6">
-              <p className="text-sm text-slate-600">Get historical signals. Requires API key or x402 payment.</p>
+              <p className="text-sm text-slate-600">Historical paid-route surface. It stays on the x402 paid flow, and broader onboarding to this path resumes only after the current recovery gate is clear.</p>
             </div>
           </div>
 
@@ -354,7 +355,7 @@ export default function AgentWatch() {
               </div>
             </div>
             <div className="p-6">
-              <p className="text-sm text-slate-600">Health check endpoint. Returns service status and readiness.</p>
+              <p className="text-sm text-slate-600">Readiness route used to verify the current recovery gate.</p>
             </div>
           </div>
         </div>
@@ -364,10 +365,10 @@ export default function AgentWatch() {
       <section className="mx-auto w-full max-w-7xl px-6 pb-20 sm:px-8 lg:px-10">
         <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10 text-center">
           <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-            Ready to try AgentWatch?
+            Want the next AgentWatch wave?
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Start with 100 free requests per month. No credit card required.
+            One real x402 paid production proof exists. Broader onboarding resumes after the current redeploy and verification pass.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <a
@@ -376,7 +377,7 @@ export default function AgentWatch() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-slate-950 px-8 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
             >
-              Get API Key
+              Open current API surface
             </a>
             <Link
               href="/#pricing"

@@ -15,21 +15,21 @@ export default function BetaTesters() {
 
         <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-amber-100 bg-amber-50 px-4 py-2 text-sm text-amber-700">
           <span className="text-lg">🧪</span>
-          Beta Testers Wanted
-          <span className="ml-2 rounded-full bg-amber-200 px-2 py-0.5 text-xs font-semibold">Only 3 spots left</span>
+          Next Small Beta Wave
+          <span className="ml-2 rounded-full bg-amber-200 px-2 py-0.5 text-xs font-semibold">2-3 builders in queue</span>
         </div>
 
         <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-          Help Shape the Future of AI-Agent Monitoring
+          Help Shape the Next AgentWatch Wave
         </h1>
         
         <p className="mt-6 text-lg leading-8 text-slate-600">
-          Building AgentWatch — an API that tracks AI-agent activity across GitHub, Twitter, and Hacker News.
-          Looking for 2-3 builders to test the flow and tell me what sucks.
+          Building AgentWatch, a recovery-gated API for AI-agent activity signals across GitHub, Twitter, and Hacker News.
+          One real x402 paid production proof already exists, and I am lining up 2-3 builders for the next small onboarding wave once the current redeploy + verification gate clears.
         </p>
 
         <div className="mt-4 rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-          <strong>📊 12 builders joined this week</strong> — Beta closes Friday or when spots fill!
+          <strong>📍 One real x402 paid production proof exists</strong> — broader onboarding resumes after the current redeploy and verification pass.
         </div>
 
         <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-8">
@@ -37,7 +37,7 @@ export default function BetaTesters() {
           <ul className="mt-4 space-y-3 text-slate-700">
             <li className="flex items-start gap-3">
               <span className="mt-1 text-emerald-600">✅</span>
-              <span><strong>Lifetime 50% discount</strong> on any paid tier when we launch</span>
+              <span><strong>Lifetime 50% discount</strong> on any paid tier when the broader rollout opens</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-emerald-600">✅</span>
@@ -45,7 +45,7 @@ export default function BetaTesters() {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-emerald-600">✅</span>
-              <span><strong>Early access</strong> to new features before anyone else</span>
+              <span><strong>Priority access</strong> to the next small wave and the features shaped by it</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-emerald-600">✅</span>
@@ -60,15 +60,15 @@ export default function BetaTesters() {
             <li className="flex gap-3">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-950 text-sm font-semibold text-white">1</span>
               <div>
-                <p className="font-medium">Sign up for free tier</p>
-                <p className="text-sm text-slate-600">100 requests/month, no credit card needed</p>
+                <p className="font-medium">Join the next small onboarding wave</p>
+                <p className="text-sm text-slate-600">I&apos;ll confirm fit and queue position while the recovery gate clears</p>
               </div>
             </li>
             <li className="flex gap-3">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-950 text-sm font-semibold text-white">2</span>
               <div>
-                <p className="font-medium">Make 5-10 API requests</p>
-                <p className="text-sm text-slate-600">I'll send you examples + documentation</p>
+                <p className="font-medium">Make 5-10 API requests once access opens</p>
+                <p className="text-sm text-slate-600">I&apos;ll send examples + documentation when onboarding resumes</p>
               </div>
             </li>
             <li className="flex gap-3">
@@ -81,8 +81,8 @@ export default function BetaTesters() {
             <li className="flex gap-3">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-950 text-sm font-semibold text-white">4</span>
               <div>
-                <p className="font-medium">~15 minutes total</p>
-                <p className="text-sm text-slate-600">That's it. I respect your time.</p>
+                <p className="font-medium">~15 minutes once access is open</p>
+                <p className="text-sm text-slate-600">Small, focused feedback beats broad beta churn.</p>
               </div>
             </li>
           </ol>
@@ -130,9 +130,9 @@ export default function BetaTesters() {
         </div>
 
         <div className="mt-10">
-          <h2 className="text-2xl font-semibold text-slate-950">Ready to Test?</h2>
+          <h2 className="text-2xl font-semibold text-slate-950">Want In on the Next Small Wave?</h2>
           <p className="mt-4 text-lg text-slate-600">
-            Pick your preferred way to reach out:
+            Share your workflow and I&apos;ll queue the next 2-3 builders once the recovery gate clears:
           </p>
           
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
@@ -140,7 +140,6 @@ export default function BetaTesters() {
               href="https://twitter.com/s1mCH1"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => { if (typeof window !== 'undefined') { localStorage.setItem('aw_beta_click_twitter', String(Date.now())); } }}
               className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center transition hover:border-sky-300 hover:shadow-lg"
             >
               <span className="text-3xl">🐦</span>
@@ -150,7 +149,6 @@ export default function BetaTesters() {
 
             <a
               href="mailto:ceo@axiomlabs.systems?subject=AgentWatch Beta Tester"
-              onClick={() => { if (typeof window !== 'undefined') { localStorage.setItem('aw_beta_click_email', String(Date.now())); } }}
               className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center transition hover:border-sky-300 hover:shadow-lg"
             >
               <span className="text-3xl">📧</span>
@@ -162,7 +160,6 @@ export default function BetaTesters() {
               href="https://github.com/creatoronsocial/axiom-agentwatch"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => { if (typeof window !== 'undefined') { localStorage.setItem('aw_beta_click_github', String(Date.now())); } }}
               className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-6 text-center transition hover:border-sky-300 hover:shadow-lg"
             >
               <span className="text-3xl">🐙</span>
@@ -172,7 +169,7 @@ export default function BetaTesters() {
           </div>
 
           <p className="mt-6 text-sm text-slate-600">
-            I'll get back to you within 24h with API key + docs. No pressure if timing doesn't work!
+            I&apos;ll reply within 24h to confirm fit and queue status. Access details go out after the current recovery gate clears.
           </p>
         </div>
 
@@ -181,19 +178,19 @@ export default function BetaTesters() {
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
             <div className="flex items-center gap-3">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-              <span className="text-sm text-slate-700">Production API live</span>
+              <span className="text-sm text-slate-700">One real x402 paid production proof exists</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-              <span className="text-sm text-slate-700">Free tier: 100 req/mo</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-              <span className="text-sm text-slate-700">Idempotent ingestion</span>
+              <span className="text-sm text-slate-700">Paid-proof artifact is ready to cite</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-100 text-amber-600">🚧</span>
-              <span className="text-sm text-slate-700">API key auth (just shipped)</span>
+              <span className="text-sm text-slate-700">Broader onboarding waits for redeploy + verification</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-100 text-amber-600">🚧</span>
+              <span className="text-sm text-slate-700">Next wave stays intentionally small</span>
             </div>
           </div>
         </div>
@@ -205,7 +202,7 @@ export default function BetaTesters() {
           <div className="flex flex-wrap gap-5">
             <a href="/" className="transition hover:text-slate-950">Home</a>
             <a href="/agentwatch" className="transition hover:text-slate-950">AgentWatch</a>
-            <a href="https://axiomlabs.systems" target="_blank" rel="noopener noreferrer" className="transition hover:text-slate-950">Live API</a>
+            <a href="https://axiomlabs.systems" target="_blank" rel="noopener noreferrer" className="transition hover:text-slate-950">AgentWatch overview</a>
           </div>
         </div>
       </footer>
